@@ -1,209 +1,558 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pedro Quadrado</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="skill.css">
-        <link rel="stylesheet" type="text/css" href="trabalhos.css">
-        <link rel="stylesheet" type="text/css" href="circulo.css">
-        <link rel="stylesheet" type="text/css" href="header.css">
-    </head>
-    <body>
-        <header>
-            <img src="https://image.freepik.com/vetores-gratis/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" alt="Foto de perfil" class="foto">
-                   
-            <div class="texto">
-                <span>Pedro Quadrado</span><br>
-                Estagiario na empres LOBA
-            </div>
-            <div class="lang"">
-                <span class="pt">PT</span>
-                <span class="en">EN</span>
-            </div>
-            <aside>
-                <ul class="info">
-                    
-                        <li><b>Data de nascimento:</b> 18/09/2002</li>
-                        <li><b>Telemovel:</b>&nbsp;<a href="tel:+351964242609">+351 964 242 609</a> </li>
-                    
-                        <li>
-                            <b>Morada:</b>&nbsp;
-                            <a href="https://www.google.pt/maps/place/40%C2%B054'36.6%22N+6%C2%B057'17.0%22W/@40.9086566,-6.9527927,15.96z/data=!4m14!1m7!3m6!1s0xd3c652631c1a6df:0x78752adcda6fc98f!2s6440-138+Figueira+de+Castelo+Rodrigo!3b1!8m2!3d40.899364!4d-6.9607479!3m5!1s0xd3c652d34204e73:0xf42c86e76eab7170!7e2!8m2!3d40.9101761!4d-6.9547078" target="_blank">
-                            Quinta da Pontinha
-                            6440-138
-                            </a>
-                        </li>
-                </ul>
-                <ul class="info">
-                        <li>
-                            <b>Email:</b>&nbsp;<a href="mailto:pedroquadrado2002@gmail.com">pedroquadrado2002@gmail.com</a>
-                        </li>
-                    
-                        <li>
-                            <b>Nacionalidade:</b> Portuguesa
-                        </li>
-                    
-                </ul>
-                <ul class="links">
-                    <li>
-                        <img src="facebook.png" width="30px">
-                    </li>
-                    <li>
-                        <img src="linkedin.png" width="30px">
-                        
-                    </li>
-                    <li>
-                        <img src="github.png" width="30px">
-                    </li>
-                </ul>
-            </aside>
-           
-        </header>   
-        <h1>Percurso</h1>
-        <header>
-        <div class="timeline">
-            <div class="container left">
-              <div class="content">
-                <h2>2019</h2>
-                <p>Curso Tecnico de Informática - Ensiguarda (3 anos)</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://thumbs.web.sapo.io/?W=300&H=70&png=1&delay_optim=1&png=1&epic=OTEyG3xbNRdhtY5qWt21eygRUdeI2+TgIRN91xhx104E9hs4JZQdz/HEdOaFtt8s+ETReWoGBpZnO+ym1bFCpNQgOLYg7lAogr+UfsAsa9yd3AQ=">
+        <br>
+        Questeonário de AVALIAÇÃO METABÓLICA
+    </header>
+
+    <main>
+        Nome:<input type="text" name="name">
+        <br>
+        <br>
+        Por favor, Liste as suas principais queixas de sáude:<br>
+        1|<input type="text" name="name"><br>
+        2|<input type="text" name="name"><br>
+        3|<input type="text" name="name"><br>
+        4|<input type="text" name="name"><br>
+        5|<input type="text" name="name"><br>
+        <br>
+        Atribua uma classificação a cada um dos items, de acordo com a sua frequência. Use uma escala de 0(NUNCA/QUASE NUNCA) a 3(SEMPRE/QUASE SEMPRE)
+        <br>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA I
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Sensação de que o intestino não esvazia completamente</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Dor abdominal aliviada pela defecação ou emissão de gases</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Obstipação alternante com diarreia</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Diarreia</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Obstipação</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Fezes duras, secas ou pouco volumosas</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Flatulência exagerada, com mau cheiro</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Mais de 3 defecações diarias</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Uso frequente de laxantes</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Eructação (arroto) excessiva ou distensão do estômago</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+
+                <td>Distensão abdominal imediatamente após a refeição</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Sensação de enfartamento durante e após a refeição</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA II
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Acne e problemas de pele</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Queda de cabelo</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Corpo inchado Retenção de liquidos</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Distúrbios hormonais</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Aumento de peso</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Sudorese excessiva e com cheiro intenso</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA III
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Apetite por doces durante o dia</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Irritabilidade quando salta uma refeição</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Sensação de fraqueza e/ou tonturas quando sai" uma refeição</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Comer alivia a fadiga</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Tremores com sensação de desmaio</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Fadiga após as refeições</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Comer doces não alivia o apetite pelos mesmos</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Necessidade de comer um doce após a refeição</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA IV
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Insónia terminal (acorda muito cedo e não consegue voltar a adormecer)</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Insónia inicial (val para a cama e não consegue adormecer)</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Sujeito a grande quantidade de stress</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA V
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Fadiga / pouca energia</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Mãos e pés frios</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Depressão / falta de motivação</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Cabelo e pelos fracos e frágeis</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Raciocínio lento/"Nevoeiro mental"</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Unhas fracas</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA VI
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Palpitações cardíacas</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Nervosismo e labilidade emocional</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Suores noturnos</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Dificuldade em ganhar peso</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th>
+                    CATEGORIA VII (SEXO MASCULINO APENAS)
+                </th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Incapacidade de concentração</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Diminuição da libido</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th colspan="5">CATEGORIA VIII (SEXO FEMININO COM MENSTRUAÇÃO)</th>
                 
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2020</h2>
-                <p>Estágio - LOBA (200 Horas)</p>
-              </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                  <h2>2021</h2>
-                  <p>Estágio - ??? (400 Horas)</p>
-                </div>
-            </div>
-          </div>
-        </header>
-        <h1>Trabalhos</h1>
-        <header>
-            <div class="trabalhos">
-                <a href="" target="blank"><img src="rockpaperscissor.png" alt="1">
-                    <span>&nbspHTML - CSS - JS</span>
-                </a>
-                </a>
-                <a href=""><img src="rockpaperscissor.png" alt="2"></a>
-                <a href=""><img src="rockpaperscissor.png" alt="3"></a>
-                <a href=""><img src="rockpaperscissor.png" alt="4"></a>
-                <a href=""><img src="rockpaperscissor.png" alt="5"></a>
-            </div>
-        </header>
-        <h1>Competências</h1>
-        <header>
-            <div class="competencias">
-                <span>HTML:</span>
-                <div class="progress">
-                    <div class="HTML">
-                        80%
-                    </div>
-                </div> 
-                <span>CSS:</span>
-                <div class="progress">
-                    <div class="CSS">
-                        65%
-                    </div>
-                </div> 
-                <Span>JavaScript</Span>
-                <div class="progress">
-                    <div class="JS">
-                        40%
-                    </div>
-                </div> 
-                <Span>PHP</Span>
-                <div class="progress">
-                    <div class="PHP">
-                        30%
-                    </div>
-                </div> 
-            </div>
+            </thead>
+            <tr>
+                <td>
+                    Perimenopausa
+                </td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
 
-            <div class="linguas">
-                <div class="circle-container">
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                        <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                    </svg>
-                        
-                    <span>
-                        Português<br>
-                        95%
-                    </span>
-
-                </div>
-                <div class="circle-container">
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circle-black"
-                                stroke-dasharray="100, 100"
-                                d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                                />
-                    <path class="circle"
-                        stroke-dasharray="80, 100"
-                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                    />
-                    
-                    </svg>
-                    <span>
-                        Inglês<br>80%
-                </span>
-                </div>
-                <div class="circle-container">
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circle-black"
-                                stroke-dasharray="100, 100"
-                                d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                                />
-                    <path class="circle"
-                        stroke-dasharray="60, 100"
-                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                    />
-                    
-                    </svg>
-                    <span>
-                    Espanhol<br>60%
-                </span>
-                </div>
-                <div class="circle-container">
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circle-black"
-                                stroke-dasharray="100, 100"
-                                d="M18 2.0845
-                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                                />
-                    <path class="circle"
-                        stroke-dasharray="30, 100"
-                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                    />
-                    
-                    </svg>
-                    <span>
-                    Francês<br>30%
-                </span>
-                </div>
-            </div>
-        </header>
-        
-        
-        
-    </body>
-    <script src="circulo.js"></script>
+            </tr>
+            <tr>
+                <td>Irregularidade dos ciclos menstruais</td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>ciclo Menstrual prolongado (mais de 32 dias)</td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ciclo menstrual curto (menos de 24 dias</td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Estar ou poder estar gravida</td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <thead>
+                <th></th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>Dores menstruais</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Fluxo de sangue abundante</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Fluxo de sangue escasso</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Dor e inchaço de peito (tensäo mamária)</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Dor pélvica durante a menstruação</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Irritabilidade e depressão durante a menstruação</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Diminuição da líbido</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Ausência de menstruação por períodos irregulares</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>dores de cabeça (enxaqueca)</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+            <tr>
+                <td>Apetite por doces antes do período menstrual</td>
+                <td><input type="checkbox" value="0"></td>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2"></td>
+                <td><input type="checkbox" value="3"></td>
+            </tr>
+        </table>
+        <table border="1">
+            <thead>
+                <th colspan="5">CATEGORIA IX (SEXO FEMININO PÓS MENOPAUSA)</th>
+            </thead>
+            <tr>
+                <td>Qual a idade da menopausa?</td>
+                <td colspan="2"><input type="text" name="menopausa"></td>
+                <td colspan="2">ANOS</td>
+            </tr>
+            <tr>
+                <td>Alguma hemorragia pós-menopausa?</td>
+                <td colspan="2">
+                    <label class="container">SIM
+                    <input type="checkbox">
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label class="container">NÃO
+                    <input type="checkbox">
+                    </label>
+                </td>
+            </tr>
+            <thead>
+                <th></th>
+                <th>0</th><th>1</th><th>2</th><th>3</th>
+            </thead>
+            <tr>
+                <td>"Afrontamentos"</td>
+            </tr>
+            <tr>
+                <td>"Nevoeiro mental"</td>
+            </tr>
+        </table>
+    </main>
+    
+</body>
 </html>
