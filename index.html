@@ -11,6 +11,10 @@
             box-sizing: border-box
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         /* Slideshow container */
         .slideshow-container {
             max-width: 1000px;
@@ -29,8 +33,7 @@
             cursor: pointer;
             width: auto;
             margin-top: -22px;
-            margin-left: 20px;
-            margin-right: 20px;
+                
             padding: 10px;
             color: white;
             font-weight: bold;
@@ -183,7 +186,7 @@
             height: 25px;
             
         }
-
+        
         table th:nth-child(n+2) {
             text-align: center;
             width: 40px;
@@ -224,6 +227,7 @@
         main table td input {
             cursor: pointer;
         }
+
     </style>
 </head>
 
@@ -231,7 +235,7 @@
 
     <div class="wrapper" style="padding: 20px;">
     <!-- Slideshow container -->
-    <div class="slideshow-container" style="padding-bottom: 50px;">
+    <div class="slideshow-container" style="padding-bottom: 10px;">
         <div class="img">
             <img
                 src="https://thumbs.web.sapo.io/?W=300&H=70&png=1&delay_optim=1&png=1&epic=OTEyG3xbNRdhtY5qWt21eygRUdeI2+TgIRN91xhx104E9hs4JZQdz/HEdOaFtt8s+ETReWoGBpZnO+ym1bFCpNQgOLYg7lAogr+UfsAsa9yd3AQ=">
@@ -1305,13 +1309,8 @@
     <!-- Next and previous buttons -->
 
     <!-- The dots/circles -->
-    <div style="text-align:center;position: fixed; bottom: 20px; width: 800px;">
+    <div style="text-align:center;margin-bottom: 50px;">
         <td><a class="prev" onclick="plusSlides(-1)">&#10094;</a></td>
-        <span class="dot" onclick="currentSlide(1)">1</span>
-        <span class="dot" onclick="currentSlide(2)">2</span>
-        <span class="dot" onclick="currentSlide(3)">3</span>
-        <span class="dot" onclick="currentSlide(4)">4</span>
-        <span class="dot" onclick="currentSlide(5)">5</span>
         <td><a class="next" onclick="plusSlides(1)">&#10095;</a></td>
     </div>
     <script>
