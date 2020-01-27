@@ -4,102 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title></title>
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-body {
-    width: 800px;
-    margin: 0 auto;
-    
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-header {
-    text-align: center;
-    font-weight: 800;
-    font-size: 17px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: blue;
+  user-select: none;
 }
 
-header section {
-    text-align: left;
-    font-weight: 600;
-    font-size: 15px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-header input {
-    width: 450px;
-    border: none;
-    border-bottom: 2px solid black;
-    padding-top: 10px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-main {
-    margin-top: 10px;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-main table {
-    width: 100%;
-    border: 1px solid black;
-    margin-top: 20px;
-    border-collapse: collapse;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-main table th {
-    background-color: rgba(128, 128, 128, 0.5);
-    text-align: left;
-    height: 20px;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-main table td:nth-child(1) {
-    padding-left: 5px;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-main table th:nth-child(n+2){
-    text-align: center;
-    width: 40px;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-
-main table td:nth-child(n+2){
-    text-align: center;
-}
-main table td:nth-child(n+2) input{
-    border: none;
-    width: 99%;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-section table td input {
-    width: 10px;
-}
-
-section table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-section table td {
-    height: 30px;
-    width: 33%;
-    padding-left: 10px;
-}
-
-section table td input {
-    border: none;
-}
-
-main table td input {
-    cursor: pointer;
-}
-
-    </style>
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}</style>
 </head>
 <body>
-    <header>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <header>
         <img src="https://thumbs.web.sapo.io/?W=300&H=70&png=1&delay_optim=1&png=1&epic=OTEyG3xbNRdhtY5qWt21eygRUdeI2+TgIRN91xhx104E9hs4JZQdz/HEdOaFtt8s+ETReWoGBpZnO+ym1bFCpNQgOLYg7lAogr+UfsAsa9yd3AQ=">
         <br>
         Questeonário de AVALIAÇÃO METABÓLICA
@@ -359,493 +370,507 @@ main table td input {
                 <td><input type="radio" name="cat4-quest-3" value="3"></td>
             </tr>
         </table>
-        <table border="1">
-            <thead>
-                <th>
-                    CATEGORIA V
-                </th>
-                <th>0</th><th>1</th><th>2</th><th>3</th>
-            </thead>
-            <tr>
-                <td>Fadiga / pouca energia</td>
-                <td><input type="radio" name="cat5-quest-1" value="0"></td>
-                <td><input type="radio" name="cat5-quest-1" value="1"></td>
-                <td><input type="radio" name="cat5-quest-1" value="2"></td>
-                <td><input type="radio" name="cat5-quest-1" value="3"></td>
-            </tr>
-            <tr>
-                <td>Mãos e pés frios</td>
-                <td><input type="radio" name="cat5-quest-2" value="0"></td>
-                <td><input type="radio" name="cat5-quest-2" value="1"></td>
-                <td><input type="radio" name="cat5-quest-2" value="2"></td>
-                <td><input type="radio" name="cat5-quest-2" value="3"></td>
-            </tr>
-            <tr>
-                <td>Depressão / falta de motivação</td>
-                <td><input type="radio" name="cat5-quest-3" value="0"></td>
-                <td><input type="radio" name="cat5-quest-3" value="1"></td>
-                <td><input type="radio" name="cat5-quest-3" value="2"></td>
-                <td><input type="radio" name="cat5-quest-3" value="3"></td>
-            </tr>
-            <tr>
-                <td>Cabelo e pelos fracos e frágeis</td>
-                <td><input type="radio" name="cat5-quest-4" value="0"></td>
-                <td><input type="radio" name="cat5-quest-4" value="1"></td>
-                <td><input type="radio" name="cat5-quest-4" value="2"></td>
-                <td><input type="radio" name="cat5-quest-4" value="3"></td>
-            </tr>
-            <tr>
-                <td>Raciocínio lento/"Nevoeiro mental"</td>
-                <td><input type="radio" name="cat5-quest-5" value="0"></td>
-                <td><input type="radio" name="cat5-quest-5" value="1"></td>
-                <td><input type="radio" name="cat5-quest-5" value="2"></td>
-                <td><input type="radio" name="cat5-quest-5" value="3"></td>
-            </tr>
-            <tr>
-                <td>Unhas fracas</td>
-                <td><input type="radio" name="cat5-quest-6" value="0"></td>
-                <td><input type="radio" name="cat5-quest-6" value="1"></td>
-                <td><input type="radio" name="cat5-quest-6" value="2"></td>
-                <td><input type="radio" name="cat5-quest-6" value="3"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th>
-                    CATEGORIA VI
-                </th>
-                <th>0</th><th>1</th><th>2</th><th>3</th>
-            </thead>
-            <tr>
-                <td>Palpitações cardíacas</td>
-                <td><input type="radio" name="cat6-quest-1" value="0"></td>
-                <td><input type="radio" name="cat6-quest-1" value="1"></td>
-                <td><input type="radio" name="cat6-quest-1" value="2"></td>
-                <td><input type="radio" name="cat6-quest-1" value="3"></td>
-            </tr>
-            <tr>
-                <td>Nervosismo e labilidade emocional</td>
-                <td><input type="radio" name="cat6-quest-2" value="0"></td>
-                <td><input type="radio" name="cat6-quest-2" value="1"></td>
-                <td><input type="radio" name="cat6-quest-2" value="2"></td>
-                <td><input type="radio" name="cat6-quest-2" value="3"></td>
-            </tr>
-            <tr>
-                <td>Suores noturnos</td>
-                <td><input type="radio" name="cat6-quest-3" value="0"></td>
-                <td><input type="radio" name="cat6-quest-3" value="1"></td>
-                <td><input type="radio" name="cat6-quest-3" value="2"></td>
-                <td><input type="radio" name="cat6-quest-3" value="3"></td>
-            </tr>
-            <tr>
-                <td>Dificuldade em ganhar peso</td>
-                <td><input type="radio" name="cat6-quest-4" value="0"></td>
-                <td><input type="radio" name="cat6-quest-4" value="1"></td>
-                <td><input type="radio" name="cat6-quest-4" value="2"></td>
-                <td><input type="radio" name="cat6-quest-4" value="3"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th>
-                    CATEGORIA VII (SEXO MASCULINO APENAS)
-                </th>
-                <th>0</th><th>1</th><th>2</th><th>3</th>
-            </thead>
-            <tr>
-                <td>Incapacidade de concentração</td>
-                <td><input type="radio" name="cat7-quest-1" value="0"></td>
-                <td><input type="radio" name="cat7-quest-1" value="1"></td>
-                <td><input type="radio" name="cat7-quest-1" value="2"></td>
-                <td><input type="radio" name="cat7-quest-1" value="3"></td>
-            </tr>
-            <tr>
-                <td>Diminuição da libido</td>
-                <td><input type="radio" name="cat7-quest-2" value="0"></td>
-                <td><input type="radio" name="cat7-quest-2" value="1"></td>
-                <td><input type="radio" name="cat7-quest-2" value="2"></td>
-                <td><input type="radio" name="cat7-quest-2" value="3"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th colspan="5">CATEGORIA VIII (SEXO FEMININO COM MENSTRUAÇÃO)</th>
-                
-            </thead>
-            <tr>
-                <td>
-                    Perimenopausa
-                </td>
-                <td colspan="2">
-                    <label class="radio">SIM
-                    <input type="radio" name="cat8-quest-1">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat8-quest-1">
-                    </label>
-                </td>
+      
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <table border="1">
+        <thead>
+            <th>
+                CATEGORIA V
+            </th>
+            <th>0</th><th>1</th><th>2</th><th>3</th>
+        </thead>
+        <tr>
+            <td>Fadiga / pouca energia</td>
+            <td><input type="radio" name="cat5-quest-1" value="0"></td>
+            <td><input type="radio" name="cat5-quest-1" value="1"></td>
+            <td><input type="radio" name="cat5-quest-1" value="2"></td>
+            <td><input type="radio" name="cat5-quest-1" value="3"></td>
+        </tr>
+        <tr>
+            <td>Mãos e pés frios</td>
+            <td><input type="radio" name="cat5-quest-2" value="0"></td>
+            <td><input type="radio" name="cat5-quest-2" value="1"></td>
+            <td><input type="radio" name="cat5-quest-2" value="2"></td>
+            <td><input type="radio" name="cat5-quest-2" value="3"></td>
+        </tr>
+        <tr>
+            <td>Depressão / falta de motivação</td>
+            <td><input type="radio" name="cat5-quest-3" value="0"></td>
+            <td><input type="radio" name="cat5-quest-3" value="1"></td>
+            <td><input type="radio" name="cat5-quest-3" value="2"></td>
+            <td><input type="radio" name="cat5-quest-3" value="3"></td>
+        </tr>
+        <tr>
+            <td>Cabelo e pelos fracos e frágeis</td>
+            <td><input type="radio" name="cat5-quest-4" value="0"></td>
+            <td><input type="radio" name="cat5-quest-4" value="1"></td>
+            <td><input type="radio" name="cat5-quest-4" value="2"></td>
+            <td><input type="radio" name="cat5-quest-4" value="3"></td>
+        </tr>
+        <tr>
+            <td>Raciocínio lento/"Nevoeiro mental"</td>
+            <td><input type="radio" name="cat5-quest-5" value="0"></td>
+            <td><input type="radio" name="cat5-quest-5" value="1"></td>
+            <td><input type="radio" name="cat5-quest-5" value="2"></td>
+            <td><input type="radio" name="cat5-quest-5" value="3"></td>
+        </tr>
+        <tr>
+            <td>Unhas fracas</td>
+            <td><input type="radio" name="cat5-quest-6" value="0"></td>
+            <td><input type="radio" name="cat5-quest-6" value="1"></td>
+            <td><input type="radio" name="cat5-quest-6" value="2"></td>
+            <td><input type="radio" name="cat5-quest-6" value="3"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <thead>
+            <th>
+                CATEGORIA VI
+            </th>
+            <th>0</th><th>1</th><th>2</th><th>3</th>
+        </thead>
+        <tr>
+            <td>Palpitações cardíacas</td>
+            <td><input type="radio" name="cat6-quest-1" value="0"></td>
+            <td><input type="radio" name="cat6-quest-1" value="1"></td>
+            <td><input type="radio" name="cat6-quest-1" value="2"></td>
+            <td><input type="radio" name="cat6-quest-1" value="3"></td>
+        </tr>
+        <tr>
+            <td>Nervosismo e labilidade emocional</td>
+            <td><input type="radio" name="cat6-quest-2" value="0"></td>
+            <td><input type="radio" name="cat6-quest-2" value="1"></td>
+            <td><input type="radio" name="cat6-quest-2" value="2"></td>
+            <td><input type="radio" name="cat6-quest-2" value="3"></td>
+        </tr>
+        <tr>
+            <td>Suores noturnos</td>
+            <td><input type="radio" name="cat6-quest-3" value="0"></td>
+            <td><input type="radio" name="cat6-quest-3" value="1"></td>
+            <td><input type="radio" name="cat6-quest-3" value="2"></td>
+            <td><input type="radio" name="cat6-quest-3" value="3"></td>
+        </tr>
+        <tr>
+            <td>Dificuldade em ganhar peso</td>
+            <td><input type="radio" name="cat6-quest-4" value="0"></td>
+            <td><input type="radio" name="cat6-quest-4" value="1"></td>
+            <td><input type="radio" name="cat6-quest-4" value="2"></td>
+            <td><input type="radio" name="cat6-quest-4" value="3"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <thead>
+            <th>
+                CATEGORIA VII (SEXO MASCULINO APENAS)
+            </th>
+            <th>0</th><th>1</th><th>2</th><th>3</th>
+        </thead>
+        <tr>
+            <td>Incapacidade de concentração</td>
+            <td><input type="radio" name="cat7-quest-1" value="0"></td>
+            <td><input type="radio" name="cat7-quest-1" value="1"></td>
+            <td><input type="radio" name="cat7-quest-1" value="2"></td>
+            <td><input type="radio" name="cat7-quest-1" value="3"></td>
+        </tr>
+        <tr>
+            <td>Diminuição da libido</td>
+            <td><input type="radio" name="cat7-quest-2" value="0"></td>
+            <td><input type="radio" name="cat7-quest-2" value="1"></td>
+            <td><input type="radio" name="cat7-quest-2" value="2"></td>
+            <td><input type="radio" name="cat7-quest-2" value="3"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <thead>
+            <th colspan="5">CATEGORIA VIII (SEXO FEMININO COM MENSTRUAÇÃO)</th>
+            
+        </thead>
+        <tr>
+            <td>
+                Perimenopausa
+            </td>
+            <td colspan="2">
+                <label class="radio">SIM
+                <input type="radio" name="cat8-quest-1">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat8-quest-1">
+                </label>
+            </td>
 
-            </tr>
-            <tr>
-                <td>Irregularidade dos ciclos menstruais</td>
-                <td colspan="2">
-                    <label class="container">SIM
-                    <input type="radio" name="cat8-quest-2">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat8-quest-2">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>ciclo Menstrual prolongado (mais de 32 dias)</td>
-                <td colspan="2">
-                    <label class="container">SIM
-                    <input type="radio" name="cat8-quest-3">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat8-quest-3">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Ciclo menstrual curto (menos de 24 dias</td>
-                <td colspan="2">
-                    <label class="container">SIM
-                    <input type="radio" name="cat8-quest-4">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat8-quest-4">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Estar ou poder estar gravida</td>
-                <td colspan="2">
-                    <label class="container">SIM
-                    <input type="radio" name="cat8-quest-5">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat8-quest-5">
-                    </label>
-                </td>
-            </tr>
-            <thead>
-                <th></th>
-                <th>0</th><th>1</th><th>2</th><th>3</th>
-            </thead>
-            <tr>
-                <td>Dores menstruais</td>
-                <td><input type="radio" name="cat8-quest-6" value="0"></td>
-                <td><input type="radio" name="cat8-quest-6" value="1"></td>
-                <td><input type="radio" name="cat8-quest-6" value="2"></td>
-                <td><input type="radio" name="cat8-quest-6" value="3"></td>
-            </tr>
-            <tr>
-                <td>Fluxo de sangue abundante</td>
-                <td><input type="radio" name="cat8-quest-7" value="0"></td>
-                <td><input type="radio" name="cat8-quest-7" value="1"></td>
-                <td><input type="radio" name="cat8-quest-7" value="2"></td>
-                <td><input type="radio" name="cat8-quest-7" value="3"></td>
-            </tr>
-            <tr>
-                <td>Fluxo de sangue escasso</td>
-                <td><input type="radio" name="cat8-quest-8" value="0"></td>
-                <td><input type="radio" name="cat8-quest-8" value="1"></td>
-                <td><input type="radio" name="cat8-quest-8" value="2"></td>
-                <td><input type="radio" name="cat8-quest-8" value="3"></td>
-            </tr>
-            <tr>
-                <td>Dor e inchaço de peito (tensäo mamária)</td>
-                <td><input type="radio" name="cat8-quest-9" value="0"></td>
-                <td><input type="radio" name="cat8-quest-9" value="1"></td>
-                <td><input type="radio" name="cat8-quest-9" value="2"></td>
-                <td><input type="radio" name="cat8-quest-9" value="3"></td>
-            </tr>
-            <tr>
-                <td>Dor pélvica durante a menstruação</td>
-                <td><input type="radio" name="cat8-quest-10" value="0"></td>
-                <td><input type="radio" name="cat8-quest-10" value="1"></td>
-                <td><input type="radio" name="cat8-quest-10" value="2"></td>
-                <td><input type="radio" name="cat8-quest-10" value="3"></td>
-            </tr>
-            <tr>
-                <td>Irritabilidade e depressão durante a menstruação</td>
-                <td><input type="radio" name="cat8-quest-11" value="0"></td>
-                <td><input type="radio" name="cat8-quest-11" value="1"></td>
-                <td><input type="radio" name="cat8-quest-11" value="2"></td>
-                <td><input type="radio" name="cat8-quest-11" value="3"></td>
-            </tr>
-            <tr>
-                <td>Diminuição da líbido</td>
-                <td><input type="radio" name="cat8-quest-12" value="0"></td>
-                <td><input type="radio" name="cat8-quest-12" value="1"></td>
-                <td><input type="radio" name="cat8-quest-12" value="2"></td>
-                <td><input type="radio" name="cat8-quest-12" value="3"></td>
-            </tr>
-            <tr>
-                <td>Ausência de menstruação por períodos irregulares</td>
-                <td><input type="radio" name="cat8-quest-13" value="0"></td>
-                <td><input type="radio" name="cat8-quest-13" value="1"></td>
-                <td><input type="radio" name="cat8-quest-13" value="2"></td>
-                <td><input type="radio" name="cat8-quest-13" value="3"></td>
-            </tr>
-            <tr>
-                <td>dores de cabeça (enxaqueca)</td>
-                <td><input type="radio" name="cat8-quest-14" value="0"></td>
-                <td><input type="radio" name="cat8-quest-14" value="1"></td>
-                <td><input type="radio" name="cat8-quest-14" value="2"></td>
-                <td><input type="radio" name="cat8-quest-14" value="3"></td>
-            </tr>
-            <tr>
-                <td>Apetite por doces antes do período menstrual</td>
-                <td><input type="radio" name="cat8-quest-15" value="0"></td>
-                <td><input type="radio" name="cat8-quest-15" value="1"></td>
-                <td><input type="radio" name="cat8-quest-15" value="2"></td>
-                <td><input type="radio" name="cat8-quest-15" value="3"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th colspan="5">CATEGORIA IX (SEXO FEMININO PÓS MENOPAUSA)</th>
-            </thead>
-            <tr>
-                <td>Qual a idade da menopausa?</td>
-                <td colspan="2"><input type="text" name="menopausa" style="width: 100%;"></td>
-                <td colspan="2">ANOS</td>
-            </tr>
-            <tr>
-                <td>Alguma hemorragia pós-menopausa?</td>
-                <td colspan="2">
-                    <label class="container">SIM
-                    <input type="radio" name="cat9-quest-1">
-                    </label>
-                </td>
-                <td colspan="2">
-                    <label class="container">NÃO
-                    <input type="radio" name="cat9-quest-1">
-                    </label>
-                </td>
-            </tr>
-            <thead>
-                <th></th>
-                <th>0</th><th>1</th><th>2</th><th>3</th>
-            </thead>
-            <tr>
-                <td>"Afrontamentos"</td>
-                <td><input type="radio" name="cat9-quest-2" value="0"></td>
-                <td><input type="radio" name="cat9-quest-2" value="1"></td>
-                <td><input type="radio" name="cat9-quest-2" value="2"></td>
-                <td><input type="radio" name="cat9-quest-2" value="3"></td>
-            </tr>
-            <tr>
-                <td>"Nevoeiro mental"</td>
-                <td><input type="radio" name="cat9-quest-3" value="0"></td>
-                <td><input type="radio" name="cat9-quest-3" value="1"></td>
-                <td><input type="radio" name="cat9-quest-3" value="2"></td>
-                <td><input type="radio" name="cat9-quest-3" value="3"></td>
-            </tr>
-            <tr>
-                <td>Oscilações bruscas de humor</td>
-                <td><input type="radio" name="cat9-quest-4" value="0"></td>
-                <td><input type="radio" name="cat9-quest-4" value="1"></td>
-                <td><input type="radio" name="cat9-quest-4" value="2"></td>
-                <td><input type="radio" name="cat9-quest-4" value="3"></td>
-            </tr>
-            <tr>
-                <td>Dor durante as relaçoes sexuals</td>
-                <td><input type="radio" name="cat9-quest-5" value="0"></td>
-                <td><input type="radio" name="cat9-quest-5" value="1"></td>
-                <td><input type="radio" name="cat9-quest-5" value="2"></td>
-                <td><input type="radio" name="cat9-quest-5" value="3"></td>
-            </tr>
-            <tr>
-                <td>Dor, secura ou prurido (comichão vaginal)</td>
-                <td><input type="radio" name="cat9-quest-6" value="0"></td>
-                <td><input type="radio" name="cat9-quest-6" value="1"></td>
-                <td><input type="radio" name="cat9-quest-6" value="2"></td>
-                <td><input type="radio" name="cat9-quest-6" value="3"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th colspan="3">CATEGORIA X</th>
-            </thead>
-            <tr>
-                <td>Quantas bebidas alcoólicas bebe por semana?</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Quantas Bebidas com cafeína bebe, por dia?</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Quantas vezes, por semana comer em restaurantes</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Que gordura(s) utiliza para cozinhar</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Quantas vezes por semana, faz exercício físico?</td>
-                <td><input type="text"></td>
-            </tr>
-        </table>
-        <table border="1">
-            <thead>
-                <th colspan="3">CATEGORIA X (continuação)</th>
-            </thead>
-            <tr>
-                <td>Em média, quantas horas trabalha por semana?</td>
-                <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Em média, quantas horas dorme por noite?</td>
-                <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Considera o seu sono reparador?</td>
-                <td>
-                    <label class="container">SIM
-                    <input type="radio" name="cat10-quest-1">
-                    </label>
-                </td>
-                <td>
-                    <label class="container">NÃO
-                    <input type="radio" name="cat10-quest-1">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Tem pacemaker?</td>
-                <td>
-                    <label class="container">SIM
-                    <input type="radio" name="cat10-quest-2">
-                    </label>
-                </td>
-                <td>
-                    <label class="container">NÃO
-                    <input type="radio" name="cat10-quest-2">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Tem algum implante metálico (próteses, placa)?</td>
-                <td>
-                    <label class="container">SIM
-                    <input type="radio" name="cat10-quest-3">
-                    </label>
-                </td>
-                <td>
-                    <label class="container">NÃO
-                    <input type="radio" name="cat10-quest-3">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Sofre de desmaios ou epilepsia?</td>
-                <td>
-                    <label class="container">SIM
-                    <input type="radio" name="cat10-quest-4">
-                    </label>
-                </td>
-                <td>
-                    <label class="container">NÃO
-                    <input type="radio" name="cat10-quest-4">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">Quais são as 3 "piores" comidas que come numa semana:</td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td colspan="3">Quais são as 3 mais "mais saudaveis" comidas que come numa semana:</td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
-            </tr>
-            <tr>
-                <td>Fuma?</td>
-                <td>
-                    <label class="container">SIM
-                    <input type="radio" name="cat10-quest-5">
-                    </label>
-                </td>
-                <td>
-                    <label class="container">NÃO
-                    <input type="radio" name="cat10-quest-5">
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Se sim, quantos cigarros, por dia?</td>
-                <td colspan="2"><input type="text"></td>
-            </tr>
-            <tr>
-                <table style="padding: 0; margin: 0;" border="1">
-                    <tr>
-                        <td rowspan="2">Quantifique o seu grau de stress de 1 a 10, numa semana "normal"</td>
-                        <td style="width: 24px;">1</td>
-                        <td style="width: 24px;">2</td>
-                        <td style="width: 24px;">3</td>
-                        <td style="width: 24px;">4</td>
-                        <td style="width: 24px;">5</td>
-                        <td style="width: 24px;">6</td>
-                        <td style="width: 24px;">7</td>
-                        <td style="width: 24px;">8</td>
-                        <td style="width: 24px;">9</td>
-                        <td style="width: 24px;">10</td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="cat10-quest-6" value="1"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="2"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="3"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="4"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="5"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="6"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="7"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="8"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="9"></td>
-                        <td><input type="radio" name="cat10-quest-6" value="10"></td>
-                    </tr>
-                </table>
-            </tr>
-        </table>
-        <br>
-        Por favor liste todas as medicações que toma e a razão para tal:
-        <br><br>
-        <textarea rows="14" style="width: 100%;"></textarea>
-        <br><br>
-        Por favor liste todos os suplementos naturais que toma e a razão para tal:
-        <br><br>
-        <textarea rows="9" style="width: 100%;"></textarea>
-        <br><br>
+        </tr>
+        <tr>
+            <td>Irregularidade dos ciclos menstruais</td>
+            <td colspan="2">
+                <label class="container">SIM
+                <input type="radio" name="cat8-quest-2">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat8-quest-2">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>ciclo Menstrual prolongado (mais de 32 dias)</td>
+            <td colspan="2">
+                <label class="container">SIM
+                <input type="radio" name="cat8-quest-3">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat8-quest-3">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Ciclo menstrual curto (menos de 24 dias</td>
+            <td colspan="2">
+                <label class="container">SIM
+                <input type="radio" name="cat8-quest-4">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat8-quest-4">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Estar ou poder estar gravida</td>
+            <td colspan="2">
+                <label class="container">SIM
+                <input type="radio" name="cat8-quest-5">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat8-quest-5">
+                </label>
+            </td>
+        </tr>
+        <thead>
+            <th></th>
+            <th>0</th><th>1</th><th>2</th><th>3</th>
+        </thead>
+        <tr>
+            <td>Dores menstruais</td>
+            <td><input type="radio" name="cat8-quest-6" value="0"></td>
+            <td><input type="radio" name="cat8-quest-6" value="1"></td>
+            <td><input type="radio" name="cat8-quest-6" value="2"></td>
+            <td><input type="radio" name="cat8-quest-6" value="3"></td>
+        </tr>
+        <tr>
+            <td>Fluxo de sangue abundante</td>
+            <td><input type="radio" name="cat8-quest-7" value="0"></td>
+            <td><input type="radio" name="cat8-quest-7" value="1"></td>
+            <td><input type="radio" name="cat8-quest-7" value="2"></td>
+            <td><input type="radio" name="cat8-quest-7" value="3"></td>
+        </tr>
+        <tr>
+            <td>Fluxo de sangue escasso</td>
+            <td><input type="radio" name="cat8-quest-8" value="0"></td>
+            <td><input type="radio" name="cat8-quest-8" value="1"></td>
+            <td><input type="radio" name="cat8-quest-8" value="2"></td>
+            <td><input type="radio" name="cat8-quest-8" value="3"></td>
+        </tr>
+        <tr>
+            <td>Dor e inchaço de peito (tensäo mamária)</td>
+            <td><input type="radio" name="cat8-quest-9" value="0"></td>
+            <td><input type="radio" name="cat8-quest-9" value="1"></td>
+            <td><input type="radio" name="cat8-quest-9" value="2"></td>
+            <td><input type="radio" name="cat8-quest-9" value="3"></td>
+        </tr>
+        <tr>
+            <td>Dor pélvica durante a menstruação</td>
+            <td><input type="radio" name="cat8-quest-10" value="0"></td>
+            <td><input type="radio" name="cat8-quest-10" value="1"></td>
+            <td><input type="radio" name="cat8-quest-10" value="2"></td>
+            <td><input type="radio" name="cat8-quest-10" value="3"></td>
+        </tr>
+        <tr>
+            <td>Irritabilidade e depressão durante a menstruação</td>
+            <td><input type="radio" name="cat8-quest-11" value="0"></td>
+            <td><input type="radio" name="cat8-quest-11" value="1"></td>
+            <td><input type="radio" name="cat8-quest-11" value="2"></td>
+            <td><input type="radio" name="cat8-quest-11" value="3"></td>
+        </tr>
+        <tr>
+            <td>Diminuição da líbido</td>
+            <td><input type="radio" name="cat8-quest-12" value="0"></td>
+            <td><input type="radio" name="cat8-quest-12" value="1"></td>
+            <td><input type="radio" name="cat8-quest-12" value="2"></td>
+            <td><input type="radio" name="cat8-quest-12" value="3"></td>
+        </tr>
+        <tr>
+            <td>Ausência de menstruação por períodos irregulares</td>
+            <td><input type="radio" name="cat8-quest-13" value="0"></td>
+            <td><input type="radio" name="cat8-quest-13" value="1"></td>
+            <td><input type="radio" name="cat8-quest-13" value="2"></td>
+            <td><input type="radio" name="cat8-quest-13" value="3"></td>
+        </tr>
+        <tr>
+            <td>dores de cabeça (enxaqueca)</td>
+            <td><input type="radio" name="cat8-quest-14" value="0"></td>
+            <td><input type="radio" name="cat8-quest-14" value="1"></td>
+            <td><input type="radio" name="cat8-quest-14" value="2"></td>
+            <td><input type="radio" name="cat8-quest-14" value="3"></td>
+        </tr>
+        <tr>
+            <td>Apetite por doces antes do período menstrual</td>
+            <td><input type="radio" name="cat8-quest-15" value="0"></td>
+            <td><input type="radio" name="cat8-quest-15" value="1"></td>
+            <td><input type="radio" name="cat8-quest-15" value="2"></td>
+            <td><input type="radio" name="cat8-quest-15" value="3"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <thead>
+            <th colspan="5">CATEGORIA IX (SEXO FEMININO PÓS MENOPAUSA)</th>
+        </thead>
+        <tr>
+            <td>Qual a idade da menopausa?</td>
+            <td colspan="2"><input type="text" name="menopausa" style="width: 100%;"></td>
+            <td colspan="2">ANOS</td>
+        </tr>
+        <tr>
+            <td>Alguma hemorragia pós-menopausa?</td>
+            <td colspan="2">
+                <label class="container">SIM
+                <input type="radio" name="cat9-quest-1">
+                </label>
+            </td>
+            <td colspan="2">
+                <label class="container">NÃO
+                <input type="radio" name="cat9-quest-1">
+                </label>
+            </td>
+        </tr>
+        <thead>
+            <th></th>
+            <th>0</th><th>1</th><th>2</th><th>3</th>
+        </thead>
+        <tr>
+            <td>"Afrontamentos"</td>
+            <td><input type="radio" name="cat9-quest-2" value="0"></td>
+            <td><input type="radio" name="cat9-quest-2" value="1"></td>
+            <td><input type="radio" name="cat9-quest-2" value="2"></td>
+            <td><input type="radio" name="cat9-quest-2" value="3"></td>
+        </tr>
+        <tr>
+            <td>"Nevoeiro mental"</td>
+            <td><input type="radio" name="cat9-quest-3" value="0"></td>
+            <td><input type="radio" name="cat9-quest-3" value="1"></td>
+            <td><input type="radio" name="cat9-quest-3" value="2"></td>
+            <td><input type="radio" name="cat9-quest-3" value="3"></td>
+        </tr>
+        <tr>
+            <td>Oscilações bruscas de humor</td>
+            <td><input type="radio" name="cat9-quest-4" value="0"></td>
+            <td><input type="radio" name="cat9-quest-4" value="1"></td>
+            <td><input type="radio" name="cat9-quest-4" value="2"></td>
+            <td><input type="radio" name="cat9-quest-4" value="3"></td>
+        </tr>
+        <tr>
+            <td>Dor durante as relaçoes sexuals</td>
+            <td><input type="radio" name="cat9-quest-5" value="0"></td>
+            <td><input type="radio" name="cat9-quest-5" value="1"></td>
+            <td><input type="radio" name="cat9-quest-5" value="2"></td>
+            <td><input type="radio" name="cat9-quest-5" value="3"></td>
+        </tr>
+        <tr>
+            <td>Dor, secura ou prurido (comichão vaginal)</td>
+            <td><input type="radio" name="cat9-quest-6" value="0"></td>
+            <td><input type="radio" name="cat9-quest-6" value="1"></td>
+            <td><input type="radio" name="cat9-quest-6" value="2"></td>
+            <td><input type="radio" name="cat9-quest-6" value="3"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <thead>
+            <th colspan="3">CATEGORIA X</th>
+        </thead>
+        <tr>
+            <td>Quantas bebidas alcoólicas bebe por semana?</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Quantas Bebidas com cafeína bebe, por dia?</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Quantas vezes, por semana comer em restaurantes</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Que gordura(s) utiliza para cozinhar</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Quantas vezes por semana, faz exercício físico?</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+      
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>~
+      <table border="1">
+        <thead>
+            <th colspan="3">CATEGORIA X (continuação)</th>
+        </thead>
+        <tr>
+            <td>Em média, quantas horas trabalha por semana?</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Em média, quantas horas dorme por noite?</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Considera o seu sono reparador?</td>
+            <td>
+                <label class="container">SIM
+                <input type="radio" name="cat10-quest-1">
+                </label>
+            </td>
+            <td>
+                <label class="container">NÃO
+                <input type="radio" name="cat10-quest-1">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Tem pacemaker?</td>
+            <td>
+                <label class="container">SIM
+                <input type="radio" name="cat10-quest-2">
+                </label>
+            </td>
+            <td>
+                <label class="container">NÃO
+                <input type="radio" name="cat10-quest-2">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Tem algum implante metálico (próteses, placa)?</td>
+            <td>
+                <label class="container">SIM
+                <input type="radio" name="cat10-quest-3">
+                </label>
+            </td>
+            <td>
+                <label class="container">NÃO
+                <input type="radio" name="cat10-quest-3">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Sofre de desmaios ou epilepsia?</td>
+            <td>
+                <label class="container">SIM
+                <input type="radio" name="cat10-quest-4">
+                </label>
+            </td>
+            <td>
+                <label class="container">NÃO
+                <input type="radio" name="cat10-quest-4">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">Quais são as 3 "piores" comidas que come numa semana:</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Quais são as 3 mais "mais saudaveis" comidas que come numa semana:</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0;"><input type="text" style="width: 99%;border: none;"></td>
+        </tr>
+        <tr>
+            <td>Fuma?</td>
+            <td>
+                <label class="container">SIM
+                <input type="radio" name="cat10-quest-5">
+                </label>
+            </td>
+            <td>
+                <label class="container">NÃO
+                <input type="radio" name="cat10-quest-5">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Se sim, quantos cigarros, por dia?</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <table style="padding: 0; margin: 0;" border="1">
+                <tr>
+                    <td rowspan="2">Quantifique o seu grau de stress de 1 a 10, numa semana "normal"</td>
+                    <td style="width: 24px;">1</td>
+                    <td style="width: 24px;">2</td>
+                    <td style="width: 24px;">3</td>
+                    <td style="width: 24px;">4</td>
+                    <td style="width: 24px;">5</td>
+                    <td style="width: 24px;">6</td>
+                    <td style="width: 24px;">7</td>
+                    <td style="width: 24px;">8</td>
+                    <td style="width: 24px;">9</td>
+                    <td style="width: 24px;">10</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="cat10-quest-6" value="1"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="2"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="3"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="4"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="5"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="6"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="7"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="8"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="9"></td>
+                    <td><input type="radio" name="cat10-quest-6" value="10"></td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+    <br>
+    Por favor liste todas as medicações que toma e a razão para tal:
+    <br><br>
+    <textarea rows="14" style="width: 100%;"></textarea>
+    <br><br>
+    Por favor liste todos os suplementos naturais que toma e a razão para tal:
+    <br><br>
+    <textarea rows="9" style="width: 100%;"></textarea>
+    </div>
+
+    <div class="mySlides fade">
         <div style="font-weight: 600;font-size: 17px;">Questionário de HÁBITOS ALIMENTARES</div>
         <br>
         A nossa dieta e muito provavelmente, o fator com mais influência na nossa saúde e bem-estar geral. O propósito deste questionário é recolher informação sobre
@@ -859,13 +884,13 @@ main table td input {
         2| Come algum "snack" a meio da manhã?
         <div style="display: inline; position: relative; float: right;">
             <label class="container">SIM
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-1">
             </label>
             <label class="container">NÃO
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-1">
             </label>
             <label class="container">POR VEZES
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-1">
             </label>
         </div> 
         <br>
@@ -877,13 +902,13 @@ main table td input {
         4| Come algum "snack" a meio da tarde?
         <div style="display: inline; position: relative; float: right;">
             <label class="container">SIM
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-2">
             </label>
             <label class="container">NÃO
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-2">
             </label>
             <label class="container">POR VEZES
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-2">
             </label>
         </div> 
         <br>
@@ -895,19 +920,21 @@ main table td input {
         6| Come algum "snack" antes de ir para a cama?
         <div style="display: inline; position: relative; float: right;">
             <label class="container">SIM
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-3">
             </label>
             <label class="container">NÃO
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-3">
             </label>
             <label class="container">POR VEZES
-                <input type="radio" name="cat1-quest-2">
+                <input type="radio" name="options-3">
             </label>
         </div> 
         <br>
         Se sim, o que come?
         <textarea rows="5" style="width: 100%; margin: 10px 0 20px;"></textarea>
-        <br>
+    </div>
+    
+    <div class="mySlides fade">
         7| Por norma, come sobremesa após:
         <div style="display: inline; position: relative; float: right;">
             <label class="container">ALMOÇO
@@ -930,13 +957,13 @@ main table td input {
         8| Acorda com fome a meio da noite?
         <div style="display: inline; position: relative; float: right;">
             <label class="container">SIM
-                <input type="checkbox">
+                <input type="radio" name="options-4">
             </label>
             <label class="container">NÃO
-                <input type="checkbox">
+                <input type="radio" name="options-4">
             </label>
             <label class="container">POR VEZES
-                <input type="checkbox">
+                <input type="radio" name="options-4">
             </label>
         </div> 
         <br>
@@ -1117,5 +1144,49 @@ main table td input {
             </tr>
         </table>
     </div>
+    </div>
+    <!-- Next and previous buttons --> 
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)">1</span>
+    <span class="dot" onclick="currentSlide(2)">2</span>
+    <span class="dot" onclick="currentSlide(3)">3</span>
+  </div>
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+    
 </body>
 </html>
