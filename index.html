@@ -161,7 +161,6 @@
 
         table td:nth-child(n+2) input {
             border: none;
-            margin: 0 auto;
             display: inline;
         }
 
@@ -186,6 +185,31 @@
         }
 
         main table td input {
+            cursor: pointer;
+        }
+
+        .itens {
+            padding-left: 5px;
+        }
+
+        .lastcontainer {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .button {
+            background-color: #80808080;
+            border: none;
+            position: relative;
+            float: right;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
             cursor: pointer;
         }
 
@@ -1185,115 +1209,135 @@
                     <table border="1" style="width: 100%;border-collapse: collapse; height: 300px;">
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come enquanto vê TV, está focado no seu telemóvel ou
-                                    faz qualquer outra tarefa
+                                <label class="lastcontainer" style="display: flex; margin: 10px 0;">
+                                    <input type="checkbox">
+                                    <div class="itens"> Come enquanto vê TV, está focado no seu telemóvel ou
+                                        faz qualquer outra tarefa</div>
                                 </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Não aprecia comida e come apenas por necessidade
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come depressa
-                                </label>
-                            </td>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come muitos alimentos processados empacotados
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Não aprecia comida e come apenas por necessidade</div>
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Não segue um horário regular de refeições
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come depressa</div>
                                 </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Não têm acesso a comidas saudaveis
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come demasiado
-                                </label>
-                            </td>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Não cozinha nem têm interesse em fazê-lo
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come muitos alimentos processados empacotados</div>
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come tarde (&lt;2 horas antes de se deitar) </label>
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Não segue um horário regular de refeições</div>
+                                </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Gosta de se sentar à mesa com a família (se
-                                    aplicável)
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Não têm acesso a comidas saudaveis</div>
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come a meio da noite
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come demasiado</div>
                                 </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Come mais quando está triste
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Não tem tempo para se sentar enquanto come
-                                </label>
-                            </td>
-                            <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Tem uma relação negativa com a comida
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Não cozinha nem têm interesse em fazê-lo</div>
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Viaja com muita frequência
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come tarde (&lt;2 horas antes de se deitar)</div>
                                 </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Faz dietas frequentes para perder peso
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Gosta de se sentar à mesa com a família (se
+                                        aplicável)</div>
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Em alturas de stress, come demasiado
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come a meio da noite</div>
                                 </label>
                             </td>
                             <td style="width: 50%;">
-                                <label class="container">
-                                    <input type="checkbox">&nbsp; Tem história de distúrbios alimentares
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Come mais quando está triste</div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Não tem tempo para se sentar enquanto come</div>
+                                </label>
+                            </td>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Tem uma relação negativa com a comida</div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Viaja com muita frequência</div>
+                                </label>
+                            </td>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Faz dietas frequentes para perder peso</div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Em alturas de stress, come demasiado</div>
+                                </label>
+                            </td>
+                            <td style="width: 50%;">
+                                <label class="lastcontainer">
+                                    <input type="checkbox">
+                                    <div class="itens">Tem história de distúrbios alimentares</div>
                                 </label>
                             </td>
                         </tr>
                     </table>
                 </div>
+                <button class="button" onclick="window.print()">Gerar PDF</button>
             </div>
         </div>
     </div>
@@ -1308,9 +1352,7 @@
         <span class="dot" onclick="currentSlide(4)">4</span>
         <span class="dot" onclick="currentSlide(5)">5</span>
         <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>      
-    <button onclick="window.print()">generate PDF</button>
-
+    </div>
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -1347,8 +1389,10 @@
             //oculta as setas
             if (slideIndex == 1) {
                 prev.style.display = "none";
+                next.style.display = "inline";
             } else if (slideIndex == 5) {
                 next.style.display = "none";
+                prev.style.display = "inline";
             } else {
                 prev.style.display = "inline";
                 next.style.display = "inline";
