@@ -1327,13 +1327,13 @@
 
     <!-- The dots/circles -->
     <div style="text-align:center;margin-bottom: 50px;">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
         <span class="dot" onclick="currentSlide(1)">1</span>
         <span class="dot" onclick="currentSlide(2)">2</span>
         <span class="dot" onclick="currentSlide(3)">3</span>
         <span class="dot" onclick="currentSlide(4)">4</span>
         <span class="dot" onclick="currentSlide(5)">5</span>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <script>
         var slideIndex = 1;
@@ -1353,6 +1353,9 @@
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
+            var prev = document.getElementById("prev")
+            var next = document.getElementById("next")
+
 
             if (n > slides.length) { slideIndex = slides.length }
             if (n < 1) { slideIndex = 1 }
@@ -1364,7 +1367,18 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
+
+            //oculta as setas
+            if (slideIndex == 1) {
+                prev.style.display = "none";
+            } else if (slideIndex == 5) {
+                next.style.display = "none";
+            } else {
+                prev.style.display = "inline";
+                next.style.display = "inline";
+            }
         }
+
         //Ocultar as textareas
         function teste(optionA) {
             if (optionA == "yes") {
