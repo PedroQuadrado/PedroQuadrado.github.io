@@ -26,6 +26,7 @@
         .mySlides {
             display: none;
         }
+
         .nav-wrapper {
             width: 150px;
             margin: auto;
@@ -52,9 +53,11 @@
         .next {
             float: right;
         }
-        .prev{
+
+        .prev {
             float: left;
         }
+
         .dot {
             cursor: pointer;
             width: auto;
@@ -69,24 +72,14 @@
             background-color: #717171;
             user-select: none;
         }
+
         .paginacao {
             margin: auto;
             margin-top: 20px;
             text-align: center;
         }
 
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-
-        
-
         /* The dots/bullets/indicators */
-        
-
         .active,
         .dot:hover {
             background-color: black;
@@ -145,7 +138,11 @@
             text-align: left;
         }
 
-        table td:nth-child(1) {
+        table th:nth-child(1) {
+            padding-left: 5px;
+        }
+
+        .categorias td:nth-child(1) {
             padding-left: 5px;
             height: 25px;
 
@@ -161,6 +158,9 @@
         .categorias td:nth-child(n+2),
         .auxtable td {
             text-align: center;
+        }
+        .auxtable td:nth-child(n+2){
+            width: 25px;
         }
 
         table td:nth-child(n+2) input {
@@ -199,6 +199,7 @@
         .lastcontainer {
             display: flex;
             margin: 10px 0;
+            padding-left: 5px;
         }
 
         .button-wrapper {
@@ -994,7 +995,7 @@
                     <tr>
                         <table class="auxtable" style="padding: 0; margin: 0;" border="1">
                             <tr>
-                                <td rowspan="2" style="width: 490px;">Quantifique o seu grau de stress de 1 a 10, numa
+                                <td rowspan="2" style="padding: 5px;text-align: left;">Quantifique o seu grau de stress de 1 a 10, numa
                                     semana "normal"</td>
                                 <td style="width: 24px;">1</td>
                                 <td style="width: 24px;">2</td>
