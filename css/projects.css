@@ -1,0 +1,31 @@
+.projects{ 
+    background-color: blue;
+    display: flex;
+    width: auto;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.img-container {
+  margin: 5px;
+  min-width: 200px;
+  width: auto;
+  display: flex;
+  background-color: greenyellow;
+}
+.img {
+  background: url(../img/rockpaperscissor.png);
+  background-position: center;
+  background-color: tomato;
+  height: 200px;
+  max-width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  transition-duration: 0.5s;
+}
+.img:hover {
+    min-width: 400px;
+    position: absolute;
+}
