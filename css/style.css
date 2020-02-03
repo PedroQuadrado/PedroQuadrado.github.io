@@ -92,6 +92,12 @@ i {
   font-weight: 400;
   color: #444;
 }
+.download {
+    margin-left: 18px;
+  margin-top: 20px;
+  font-weight: 400;
+  color: #444;
+}
 
 @media screen and (max-width: 1420px) {
   main {
