@@ -43,18 +43,18 @@ main {
   box-shadow: 2px 2px 5px #4444443d;
   opacity: 0.9;
 }
-.social-links{
-    position: relative;
-    float: right;
-    top: 0;
-    color: #444;
-    font-size: 35px;
-    margin: 15px;
-    display: flex;
-    justify-content: space-between;
+.social-links {
+  position: relative;
+  float: right;
+  top: 0;
+  color: #444;
+  font-size: 35px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .social-links i {
-    margin: 5px;
+  margin: 5px;
 }
 h1 {
   margin-left: 20px;
@@ -63,13 +63,13 @@ h1 {
   font-size: 3em;
 }
 .personal-info {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 .personal-info a {
-    text-decoration: none;
-    color: #444;
+  text-decoration: none;
+  color: #444;
 }
 i {
   width: 35px;
@@ -93,7 +93,7 @@ i {
   color: #444;
 }
 .download {
-    margin-left: 18px;
+  margin-left: 18px;
   margin-top: 20px;
   font-weight: 400;
   color: #444;
@@ -114,19 +114,41 @@ i {
     flex: 1;
     width: 100%;
   }
+  
 }
 @media screen and (max-width: 750px) {
-    main{
-        width: 95vw;
+  main {
+    width: 98vw;
+    height: 100%;
+  }
+  
+  .social-links {
+    flex-direction: column;
+  }
+  .personal-info {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+}
+@media print {
+    body{
+        background: none;
+        background-color: #444;
+        align-items: flex-start;
     }
-    .social-links{
-        flex-direction: column;
+    .button-container{
+        background-color: tomato;
+        display: none;
     }
-    .personal-info {
-        font-size: 20px;
+    .skills-section{
+        display: initial;
     }
-    h1{
-        font-size: 2.5em;
+    .idiomes{
+        display: initial;
+    }
+    .projects{
+        display: initial;
     }
 }
-
