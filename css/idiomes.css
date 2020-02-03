@@ -23,7 +23,7 @@
     padding-right: 10px;
     border-radius: 10px;
     height: 25px;
-    animation: progressbar 2s linear forwards;
+    animation: progressbar .9s linear forwards;
 }
 @keyframes progressbar {
     0% {

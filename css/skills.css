@@ -1,3 +1,6 @@
+.circles-wraper{
+    margin-top: 30px;
+}
 .circle-container {
     position: relative;
     display: inline;
@@ -31,10 +34,10 @@
 .circle {
     stroke: #444;
     fill: none;
-    stroke-width: 1.5px;
-    animation: progress 2s linear forwards;
+    stroke-width: 0;
+    animation: progress .9s linear forwards;
     transition-duration: 1s;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 .circle-container:hover .span {
     font-size: 30px;
@@ -43,6 +46,13 @@
     0% {
         stroke-dasharray: 0 100;
     }
+    1%{
+        stroke-width: 1.5px;
+    }
+    100%{
+        stroke-width: 1.5px;
+    }
+    
 }    
 .skills-section{
     text-align: center;

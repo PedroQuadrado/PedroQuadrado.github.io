@@ -12,32 +12,18 @@ button{
     border: none;
     outline: 0;
 }
-button:hover{
+.btn{
+    background-color: transparent;
+    border: 2px solid #444;
+    color: #444;
+}
+.active, button:hover{
     background-color: #444;
     border: 2px solid #444;
     color: #fff;
     cursor: pointer;
 }
-.info-btn{
-    background-color: #444;
-    border: 2px solid #444;
-    color: #fff;
-}
-.skills-btn{
-    background-color: transparent;
-    border: 2px solid #444;
-    color: #444;
-}
-.projects-btn{
-    background-color: transparent;
-    border: 2px solid #444;
-    color: #444;
-}
-.Languages-btn{
-    background-color: transparent;
-    border: 2px solid #444;
-    color: #444;
-}
+
 .info-section h2{
     color: #444;
     margin-bottom: 10px;

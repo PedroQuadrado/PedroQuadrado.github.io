@@ -1,31 +1,38 @@
-.projects{ 
-    background-color: blue;
+.trabalhos{
     display: flex;
-    width: auto;
-    margin: 0 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-flow: wrap;
+    opacity: 0;
+    animation: trabalhos-fade .7s linear forwards;
+}
+.trabalhos img {
+    max-width: 100%;
+    border-radius: 7px;
+    margin-bottom: 5px;
 }
 
-.img-container {
-  margin: 5px;
-  min-width: 200px;
-  width: auto;
-  display: flex;
-  background-color: greenyellow;
+.trabalhos a {
+    min-width: 150px;
+    max-width: 20%;
+    margin: 10px;
+    background-color: #444;
+    padding: 6px 6px 20px 6px;
+    border-radius: 10px;
+    color: White;
+    text-decoration: none;
 }
-.img {
-  background: url(../img/rockpaperscissor.png);
-  background-position: center;
-  background-color: tomato;
-  height: 200px;
-  max-width: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 1;
-  transition-duration: 0.5s;
+.trabalhos a:hover {
+    transform: scale(1.1);
+    transition: 10ms;
+    box-shadow: 0px 0px 1px #444;
+    z-index: 2;
+    opacity: 1;
 }
-.img:hover {
-    min-width: 400px;
-    position: absolute;
+@keyframes trabalhos-fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

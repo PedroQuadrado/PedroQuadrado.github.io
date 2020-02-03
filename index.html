@@ -15,13 +15,16 @@
 </head>
 
 <body>
-    <main>
+    <main style="margin-top: 10px;">
         <div class="left-container">
             <img src="img/fotp_perfil.jfif" alt="Foto de perfil" class="foto-perfil">
             <div class="social-links">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-                <i class="fab fa-facebook-square"></i>
+                <a href="https://github.com/PedroQuadrado" target="blank" style="color: #444;"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PedroQuadrado" target="blank" style="color: #444;"><i
+                        class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/pedro.quadrado.1" target="blank" style="color: #444;"><i
+                        class="fab fa-facebook-square"></i></a>
             </div>
             <h1>Pedro Quadrado</h1>
             <div class="personal-info">
@@ -42,11 +45,11 @@
 
         </div>
         <div class="right-container">
-            <div class="button-container">
-                <button class="info-btn" onclick="funcInfo()">INFO</button>
-                <button class="skills-btn" onclick="funcSkills()">SKILS</button>
-                <button class="projects-btn" onclick="funcProjects()">PROJECTS</button>
-                <button class="Languages-btn" onclick="funcLanguages()">LANGUAGES</button>
+            <div class="button-container" id="buttons">
+                <button class="btn active" onclick="funcInfo()">INFO</button>
+                <button class="btn" onclick="funcSkills()">SKILS</button>
+                <button class="btn" onclick="funcLanguages()">LANGUAGES</button>
+                <button class="btn" onclick="funcProjects()">PROJECTS</button>
             </div>
             <div class="info-section" id="info" style="text-align: justify;">
                 <h2>Hi! Im Pedro.</h2>
@@ -55,7 +58,7 @@
                 I'm also studying at Ensiguarda, in the computer technician course. You can check on my projects/skills
                 and contact me if you want. <strong>;)</strong>
             </div>
-            <div class="skills-section" id="skills" style="display: none;" >
+            <div class="skills-section" id="skills" style="display: none;">
                 <div class="circles-wraper">
                     <div class="circle-container">
                         <svg viewBox="0 0 36 36" class="circular-chart">
@@ -75,7 +78,7 @@
                             <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
                                         a 15.9155 15.9155 0 0 1 0 31.831
                                         a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                            <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
                             a 15.9155 15.9155 0 0 1 0 31.831
                             a 15.9155 15.9155 0 0 1 0 -31.831" />
                         </svg>
@@ -88,7 +91,7 @@
                             <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
                                         a 15.9155 15.9155 0 0 1 0 31.831
                                         a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
+                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
                             a 15.9155 15.9155 0 0 1 0 31.831
                             a 15.9155 15.9155 0 0 1 0 -31.831" />
                         </svg>
@@ -130,30 +133,51 @@
                 </div>
             </div>
             <div class="projects" id="projects" style="display: none;">
-                <div class="img-container">
-                    <div class="img"></div>
-                    zzz
-                </div>
-                <div class="img-container">
-                    <div class="img"></div>
-                    zzz
-                </div>
-                <div class="img-container">
-                    <div class="img"></div>
-                    zzz
-                </div>
-                <div class="img-container">
-                    <div class="img"></div>
-                    zz
-                </div>
-                <div class="img-container">
-                    <div class="img"></div>
-                    zzz
+                <div class="trabalhos">
+                    <a href="" target="blank"><img src="img/projects/rockpaperscissor.png" alt="1">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    </a>
+                    <a href=""><img src="img/projects/portugal.png" alt="2">
+                        <span>&nbspHTML - CSS</span>
+                    </a>
+                    <a href=""><img src="img/projects/square.png" alt="3">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    <a href=""><img src="img/projects/tecnicoinformatica.png" alt="4">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    <a href="" target="blank"><img src="img/projects/rockpaperscissor.png" alt="1">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    </a>
+                    <a href=""><img src="img/projects/portugal.png" alt="2">
+                        <span>&nbspHTML - CSS</span>
+                    </a>
+                    <a href=""><img src="img/projects/square.png" alt="3">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    <a href=""><img src="img/projects/tecnicoinformatica.png" alt="4">
+                        <span>&nbspHTML - CSS - JS</span>
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </main>
     <script>
+        //makes the buttons active
+        var header = document.getElementById("buttons");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        //Makes right section content disapear/apear
         var info = document.getElementById('info');
         var skills = document.getElementById('skills');
         var languages = document.getElementById('languages');
@@ -179,7 +203,7 @@
         }
         function funcLanguages() {
             info.style.display = 'none';
-            skills.style.display = 'nonel';
+            skills.style.display = 'none';
             projects.style.display = 'none';
             languages.style.display = 'initial';
         }
