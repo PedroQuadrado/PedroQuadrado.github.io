@@ -23,6 +23,8 @@ main {
   padding: 20px;
 }
 .left-container {
+  min-height: 600px;
+  max-height: 1000px;
   height: 60vh;
   width: 450px;
   background-color: #cccccca1;
@@ -30,6 +32,8 @@ main {
   border-radius: 10px;
 }
 .right-container {
+  min-height: 600px;
+  max-height: 1000px;
   height: 60vh;
   width: 900px;
   background-color: #cccccca1;
@@ -114,14 +118,13 @@ i {
     flex: 1;
     width: 100%;
   }
-  
 }
 @media screen and (max-width: 750px) {
   main {
     width: 98vw;
     height: 100%;
   }
-  
+
   .social-links {
     flex-direction: column;
   }
@@ -133,22 +136,22 @@ i {
   }
 }
 @media print {
-    body{
-        background: none;
-        background-color: #444;
-        align-items: flex-start;
-    }
-    .button-container{
-        background-color: tomato;
-        display: none;
-    }
-    .skills-section{
-        display: initial;
-    }
-    .idiomes{
-        display: initial;
-    }
-    .projects{
-        display: initial;
-    }
+  body {
+    background: none;
+    background-color: #444;
+    align-items: flex-start;
+  }
+  .button-container {
+    background-color: tomato;
+    display: none;
+  }
+  .skills-section {
+    display: initial;
+  }
+  .idiomes {
+    display: initial;
+  }
+  .projects {
+    display: initial;
+  }
 }
