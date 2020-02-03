@@ -1,13 +1,12 @@
 .idiomes{
     width: auto;
-    margin: 20px;
     color: #444;
     font-weight: 600;
     font-size: 25px;
     font-weight: 500;
 }
 .progress-stroke{
-    margin: 30px;
+    margin: 30px 30px 30px 10px;
     height: 5px;
     width: auto;
     background-color: #666;

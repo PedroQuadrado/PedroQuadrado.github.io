@@ -8,6 +8,9 @@
     <script src="https://kit.fontawesome.com/eaea929bcf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/right-section.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/idiomes.css">
+    <link rel="stylesheet" href="css/projects.css">
     <title>Pedro Quadrado</title>
 </head>
 
@@ -40,19 +43,147 @@
         </div>
         <div class="right-container">
             <div class="button-container">
-                <button class="info-btn">INFO</button>
-                <button class="skills-btn">SKILS</button>
-                <button class="projects-btn">PROJECTS</button>
+                <button class="info-btn" onclick="funcInfo()">INFO</button>
+                <button class="skills-btn" onclick="funcSkills()">SKILS</button>
+                <button class="projects-btn" onclick="funcProjects()">PROJECTS</button>
+                <button class="Languages-btn" onclick="funcLanguages()">LANGUAGES</button>
             </div>
-            <div class="info-section">
+            <div class="info-section" id="info" style="text-align: justify;">
                 <h2>Hi! Im Pedro.</h2>
-                I'm a frontend developer, currently intern at <a href="https://www.loba.pt/pt/" target="blank">LOBA</a>  company. 
-                I'm also studying at Ensigurda, in the computer technician course.
+                I'm a frontend developer, currently intern at <a href="https://www.loba.pt/pt/" target="blank">LOBA</a>
+                company.
+                I'm also studying at Ensiguarda, in the computer technician course. You can check on my projects/skills
+                and contact me if you want. <strong>;)</strong>
             </div>
-
+            <div class="skills-section" id="skills" style="display: none;" >
+                <div class="circles-wraper">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span>
+                            HTML<br>90%
+                        </span>
+                    </div>
+                    <div class="circle-container">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span>
+                            CSS<br>70%
+                        </span>
+                    </div>
+                    <div class="circle-container">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span>
+                            JS<br>50%
+                        </span>
+                    </div>
+                    <div class="circle-container">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span>
+                            PHP<br>30%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="idiomes" id="languages" style="display: none;">
+                Portuguese:
+                <div class="progress-stroke">
+                    <div class="progess-bar" style="width: 95%;">95%</div>
+                </div>
+                English:
+                <div class="progress-stroke">
+                    <div class="progess-bar" style="width: 80%;">80%</div>
+                </div>
+                Spanish:
+                <div class="progress-stroke">
+                    <div class="progess-bar" style="width: 60%;">60%</div>
+                </div>
+                French:
+                <div class="progress-stroke">
+                    <div class="progess-bar" style="width: 35%;">35%</div>
+                </div>
+            </div>
+            <div class="projects" id="projects" style="display: none;">
+                <div class="img-container">
+                    <div class="img"></div>
+                    zzz
+                </div>
+                <div class="img-container">
+                    <div class="img"></div>
+                    zzz
+                </div>
+                <div class="img-container">
+                    <div class="img"></div>
+                    zzz
+                </div>
+                <div class="img-container">
+                    <div class="img"></div>
+                    zz
+                </div>
+                <div class="img-container">
+                    <div class="img"></div>
+                    zzz
+                </div>
+            </div>
         </div>
     </main>
+    <script>
+        var info = document.getElementById('info');
+        var skills = document.getElementById('skills');
+        var languages = document.getElementById('languages');
+        var projects = document.getElementById('projects');
 
+        function funcInfo() {
+            info.style.display = 'initial';
+            skills.style.display = 'none';
+            languages.style.display = 'none';
+            projects.style.display = 'none';
+        }
+        function funcSkills() {
+            info.style.display = 'none';
+            skills.style.display = 'initial';
+            languages.style.display = 'none';
+            projects.style.display = 'none';
+        }
+        function funcProjects() {
+            info.style.display = 'none';
+            skills.style.display = 'none';
+            projects.style.display = 'initial';
+            languages.style.display = 'none';
+        }
+        function funcLanguages() {
+            info.style.display = 'none';
+            skills.style.display = 'nonel';
+            projects.style.display = 'none';
+            languages.style.display = 'initial';
+        }
+    </script>
 </body>
 
 </html>

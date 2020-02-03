@@ -33,6 +33,7 @@ main {
   height: 60vh;
   width: 900px;
   background-color: #cccccca1;
+  padding: 20px;
   margin: 10px;
   border-radius: 10px;
 }
@@ -108,7 +109,7 @@ i {
 }
 @media screen and (max-width: 750px) {
     main{
-        width: 95svw;
+        width: 95vw;
     }
     .social-links{
         flex-direction: column;

@@ -7,7 +7,7 @@ button{
     text-decoration: none;
     margin: 0 6px;
     padding: 6px 10px;
-    width: 90px;
+    width: 110px;
     border-radius: 15px;
     border: none;
     outline: 0;
@@ -16,6 +16,7 @@ button:hover{
     background-color: #444;
     border: 2px solid #444;
     color: #fff;
+    cursor: pointer;
 }
 .info-btn{
     background-color: #444;
@@ -28,6 +29,11 @@ button:hover{
     color: #444;
 }
 .projects-btn{
+    background-color: transparent;
+    border: 2px solid #444;
+    color: #444;
+}
+.Languages-btn{
     background-color: transparent;
     border: 2px solid #444;
     color: #444;
