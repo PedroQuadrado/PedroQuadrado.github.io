@@ -19,7 +19,7 @@ header > h1 {
   color: #d7d7d7;
 }
 
-img {
+header img , footer img{
   width: 50px;
   background-color: rgb(29, 29, 29);
   padding: 7px;

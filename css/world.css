@@ -36,11 +36,14 @@ tbody tr:nth-child(even){
     }
 }
 @media only screen and (max-width: 480px) {
+    main {
+        padding-top: 20px;
+    }
     th{
         font-size: 0.5rem;
         padding: 5px;
     }
-    tr{
+    td{
         font-size: 0.5rem;
         padding: 5px;
     }
