@@ -2,156 +2,109 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
-body {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html {
+  background-color: rgb(53, 54, 58);
+  font-family: Arial, Helvetica, sans-serif;
 }
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  padding: 20px;
-}
-.left-container {
-  min-height: 600px;
-  max-height: 1000px;
-  height: 60vh;
-  width: 450px;
-  background-color: #cccccca1;
-  margin: 10px;
-  border-radius: 10px;
-}
-.right-container {
-  min-height: 600px;
-  max-height: 1000px;
-  height: 60vh;
-  width: 900px;
-  background-color: #cccccca1;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-.foto-perfil {
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #4444443d;
-  opacity: 0.9;
-}
-.social-links {
-  position: relative;
-  float: right;
-  top: 0;
-  color: #444;
-  font-size: 35px;
-  margin: 15px;
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.social-links i {
-  margin: 5px;
-}
-h1 {
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #444;
-  font-size: 3em;
-}
-.personal-info {
-  margin-top: 25px;
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-.personal-info a {
-  text-decoration: none;
-  color: #444;
-}
-i {
-  width: 35px;
-}
-.phone {
-  margin-left: 18px;
-  margin-top: 20px;
-  font-weight: 400;
-  color: #444;
-}
-.email {
-  margin-left: 18px;
-  margin-top: 20px;
-  font-weight: 400;
-  color: #444;
-}
-.city {
-  margin-left: 18px;
-  margin-top: 20px;
-  font-weight: 400;
-  color: #444;
-}
-.download {
-  margin-left: 18px;
-  margin-top: 20px;
-  font-weight: 400;
-  color: #444;
+  padding: 10px;
+  align-items: center;
 }
 
-@media screen and (max-width: 1420px) {
-  main {
-    flex-direction: column;
-    width: 80%;
-  }
-  .right-container {
-    flex: 1;
-    width: 100%;
-    height: 110%;
-    padding-bottom: 40px;
-  }
-  .left-container {
-    flex: 1;
-    width: 100%;
-  }
+header > h1 {
+  color: #d7d7d7;
 }
-@media screen and (max-width: 750px) {
-  main {
-    width: 98vw;
-    height: 100%;
-  }
 
-  .social-links {
-    flex-direction: column;
-  }
-  .personal-info {
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 2.5em;
+img {
+  width: 50px;
+  background-color: rgb(29, 29, 29);
+  padding: 7px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 20px;
+  width: 100%;
+}
+.total,
+.new,
+.deaths,
+.recovered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d7d7d7;
+}
+.total-cases {
+  font-size: 7rem;
+  font-weight: 600;
+  color: blue;
+}
+.new-cases {
+  font-size: 7rem;
+  font-weight: 600;
+  color: orange;
+}
+.total-deaths {
+  font-size: 7rem;
+  font-weight: 600;
+  color: red;
+}
+.total-recovered {
+  font-size: 7rem;
+  font-weight: 600;
+  color: green;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
+footer > img {
+  width: 50px;
+  padding: 12px;
+  background-color: rgb(29, 29, 29);
+}
+.updated {
+  color: #d7d7d7;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .total-cases,
+  .new-cases,
+  .total-deaths,
+  .total-recovered {
+    font-size: 5rem;
   }
 }
-@media print {
-  body {
-    background: none;
-    background-color: #444;
-    align-items: flex-start;
+@media only screen and (max-width: 400px) {
+  header > h1 {
+    font-size: 1rem;
   }
-  .button-container {
-    background-color: tomato;
-    display: none;
-  }
-  .skills-section {
-    display: initial;
-  }
-  .idiomes {
-    display: initial;
-  }
-  .projects {
-    display: initial;
+}
+@media only screen and (max-width: 380px) {
+  .total-cases,
+  .new-cases,
+  .total-deaths,
+  .total-recovered {
+    font-size: 4rem;
   }
 }

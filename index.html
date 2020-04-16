@@ -1,215 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/eaea929bcf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/right-section.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/idiomes.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <title>Pedro Quadrado</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/virus.svg" type="image/x-icon" />
+    <script defer src="js/main.js"></script>
+    <title>COVID-19</title>
+  </head>
+  <body>
+    <header>
+      <a href="portugal.html">
+        <img src="img/portugal.svg" alt="portugal" />
+      </a>
+      <h1>COVID-19 STATS</h1>
+      <a href="world.html">
+        <img src="img/mundo.svg" alt="mundo" />
+      </a>
+    </header>
     <main>
-        <div class="left-container">
-            <img src="img/fotp_perfil.jfif" alt="Foto de perfil" class="foto-perfil">
-            <div class="social-links">
-                <a href="https://github.com/PedroQuadrado" target="blank" style="color: #444;"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/PedroQuadrado" target="blank" style="color: #444;"><i
-                        class="fab fa-github-square"></i></a>
-                <a href="https://www.facebook.com/pedro.quadrado.1" target="blank" style="color: #444;"><i
-                        class="fab fa-facebook-square"></i></a>
-            </div>
-            <h1>Pedro Quadrado</h1>
-            <div class="personal-info">
-                <div class="phone">
-                    <a href="tel:+351964242609"><i class="fas fa-phone-alt"></i><span>964242609</span></a>
-                </div>
-                <div class="email">
-                    <a href="mailto:pedroquadrado2002@gmail.com"><i
-                            class="fas fa-envelope"></i><span>pedroquadrado2002@gmail.com</span></a>
-                </div>
-                <div class="city">
-                    <a href="https://www.google.com/maps/place/Figueira+de+Castelo+Rodrigo/data=!4m2!3m1!1s0xd3c64d9773ca241:0x47ccf330736e716?sa=X&ved=2ahUKEwigrZnjhK7nAhVJAWMBHdZIBNMQ8gEwFHoECBIQBA"
-                        ><i class="fas fa-map-marker-alt"></i><span>Guarda,
-                            Portugal</span></a>
-                </div>
-                <div class="download">
-                    <a href="Pedro_Quadrado.pdf"
-                        download="Pedro_Quadrado"><i class="fas fa-arrow-circle-down"></i><span>Download</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="right-container">
-            <div class="button-container" id="buttons">
-                <button class="btn active" onclick="funcInfo()">INFO</button>
-                <button class="btn" onclick="funcSkills()">SKILS</button>
-                <button class="btn" onclick="funcLanguages()">LANGUAGES</button>
-                <button class="btn" onclick="funcProjects()">PROJECTS</button>
-            </div>
-            <div class="info-section" id="info" style="text-align: justify;">
-                <h2>Hi! Im Pedro.</h2>
-                I'm a frontend developer, currently intern at <a href="https://www.loba.pt/pt/" target="blank">LOBA</a>
-                company.
-                I'm also studying at Ensiguarda, in the computer technician course. You can check on my projects/skills
-                and contact me if you want. <strong>;)</strong>
-            </div>
-            <div class="skills-section" id="skills" style="display: none;">
-                <div class="circles-wraper">
-                    <div class="circle-container">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <span>
-                            HTML<br>90%
-                        </span>
-                    </div>
-                    <div class="circle-container">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <span>
-                            CSS<br>70%
-                        </span>
-                    </div>
-                    <div class="circle-container">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <span>
-                            JS<br>50%
-                        </span>
-                    </div>
-                    <div class="circle-container">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-black" stroke-dasharray="100, 100" d="M18 2.0845
-                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <span>
-                            PHP<br>30%
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="idiomes" id="languages" style="display: none;">
-                Portuguese:
-                <div class="progress-stroke">
-                    <div class="progess-bar" style="width: 95%;">95%</div>
-                </div>
-                English:
-                <div class="progress-stroke">
-                    <div class="progess-bar" style="width: 80%;">80%</div>
-                </div>
-                Spanish:
-                <div class="progress-stroke">
-                    <div class="progess-bar" style="width: 60%;">60%</div>
-                </div>
-                French:
-                <div class="progress-stroke">
-                    <div class="progess-bar" style="width: 35%;">35%</div>
-                </div>
-            </div>
-            <div class="projects" id="projects" style="display: none;">
-                <div class="trabalhos">
-                    <a href="" target="blank"><img src="img/projects/rockpaperscissor.png" alt="1">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    </a>
-                    <a href=""><img src="img/projects/portugal.png" alt="2">
-                        <span>&nbspHTML - CSS</span>
-                    </a>
-                    <a href=""><img src="img/projects/square.png" alt="3">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    <a href=""><img src="img/projects/tecnicoinformatica.png" alt="4">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    <a href="" target="blank"><img src="img/projects/rockpaperscissor.png" alt="1">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    </a>
-                    <a href=""><img src="img/projects/portugal.png" alt="2">
-                        <span>&nbspHTML - CSS</span>
-                    </a>
-                    <a href=""><img src="img/projects/square.png" alt="3">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    <a href=""><img src="img/projects/tecnicoinformatica.png" alt="4">
-                        <span>&nbspHTML - CSS - JS</span>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
+      <div class="total">
+        <div class="label">TOTAL CASES</div>
+        <div class="total-cases" id="totalCases">000,000</div>
+      </div>
+      <div class="new">
+        <div class="label">NEW CASES</div>
+        <div class="new-cases" id="newCases">000,000</div>
+      </div>
+      <div class="deaths">
+        <div class="label">DEATHS</div>
+        <div class="total-deaths" id="deaths">000,000</div>
+      </div>
+      <div class="recovered">
+        <div class="label">RECOVERED</div>
+        <div class="total-recovered" id="recoved">000,000</div>
+      </div>
     </main>
-    <script>
-        //makes the buttons active
-        var header = document.getElementById("buttons");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-
-        //Makes right section content disapear/apear
-        var info = document.getElementById('info');
-        var skills = document.getElementById('skills');
-        var languages = document.getElementById('languages');
-        var projects = document.getElementById('projects');
-
-        function funcInfo() {
-            info.style.display = 'initial';
-            skills.style.display = 'none';
-            languages.style.display = 'none';
-            projects.style.display = 'none';
-        }
-        function funcSkills() {
-            info.style.display = 'none';
-            skills.style.display = 'initial';
-            languages.style.display = 'none';
-            projects.style.display = 'none';
-        }
-        function funcProjects() {
-            info.style.display = 'none';
-            skills.style.display = 'none';
-            projects.style.display = 'initial';
-            languages.style.display = 'none';
-        }
-        function funcLanguages() {
-            info.style.display = 'none';
-            skills.style.display = 'none';
-            projects.style.display = 'none';
-            languages.style.display = 'initial';
-        }
-    </script>
-</body>
-
+    <footer>
+      <div class="updated" id="updatedTime">UPDATED IN</div>
+      <a href="https://github.com/PedroQuadrado">
+        <img src="img/github.svg" alt="github" />
+      </a>
+    </footer>
+  </body>
 </html>
