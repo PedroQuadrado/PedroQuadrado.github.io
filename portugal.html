@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <a href="portugal.html">
-        <img src="img/portugal.svg" alt="portugal" />
+      <a href="world.html">
+        <img src="img/mundo.svg" alt="mundo" />
       </a>
       <h1>PORTUGAL STATS</h1>
       <a href="index.html">
@@ -30,12 +30,16 @@
       </a>
     </footer>
     <script>
+      // footer = 64 px
+      iframe = document.getElementById("frame");
       const mobile =
         "https://esriportugal.maps.arcgis.com/apps/opsdashboard/index.html#/e9dd1dea8d1444b985d38e58076d197a";
-      windowSize = window.innerWidth
-      if(windowSize < 900){
-        document.getElementById("frame").src = mobile;
+      windowSize = window.innerWidth;
+      if (windowSize < 900) {
+        iframe.src = mobile;
       }
+      heightSize = window.innerHeight - 120;
+      frame.style.height = heightSize + "px";
     </script>
   </body>
 </html>
