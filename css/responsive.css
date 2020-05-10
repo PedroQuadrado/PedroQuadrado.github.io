@@ -1,0 +1,38 @@
+body{
+    max-width: 95vw;
+}
+.left-section {
+    max-width: 30vw;
+}
+@media only screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+        position: absolute;
+        justify-content: flex-start;
+        min-width: 97vw;
+        min-height: 1300px;
+    }
+    .left-section {
+        max-width: none;
+        width: 95%;
+    }
+    .right-section {
+        max-width: none;
+        width: 95%;
+       
+    }
+    .project {
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        flex: none;
+        width: 100%;
+    }
+}
