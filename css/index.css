@@ -69,7 +69,7 @@ main {
 .left li {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 25px 0;
 }
 .left ul img {
     width: 25px;
