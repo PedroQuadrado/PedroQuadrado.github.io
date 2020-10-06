@@ -1,250 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/quadrado.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 1020px)"
-      href="css/responsive.css"
-    />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://kit.fontawesome.com/eaea929bcf.js"
       crossorigin="anonymous"
     ></script>
-
-    <title>Pedro Quadrado</title>
+    <title>Quadrado</title>
   </head>
   <body>
-    <div class="left-section">
-      <div class="perfil"></div>
-      <div class="name">Pedro Quadrado</div>
-      <div class="occupation">Web Developer</div>
-      <div class="links">
-        <div class="location">
-          <a
-            href="https://www.google.com/maps/place/Guarda/@40.5404473,-7.5302129,10z/data=!3m1!4b1!4m5!3m4!1s0xd3cfac48ff6c653:0x400ebbde4903500!8m2!3d40.5308408!4d-7.2221421"
-            ><i class="fas fa-map-marker-alt"></i> Guarda, PT</a
-          >
+    <main>
+      <div class="left">
+        <div class="photo-container">
+          <img src="assets/perfil/triangulo.gif" alt="" />
         </div>
-        <div class="github">
-          <a href="https://github.com/PedroQuadrado"
-            ><i class="fab fa-github"></i> Github</a
-          >
-        </div>
-        <div class="email">
-          <a href="mailto:quadrado.dev@gmail.com"
-            ><i class="fas fa-envelope"></i> quadrado.dev@gmail.com</a
-          >
-        </div>
+        <div class="name">Pedro Quadrado</div>
+        <div class="job">Web Developer</div>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>Guarda, PT</li>
+          <li><i class="fab fa-github"></i>Github</li>
+          <li><i class="fas fa-envelope"></i>Quadrado.dev@gmail.com</li>
+        </ul>
+        <a href=""><i class="fas fa-file-download"></i>Download</a>
       </div>
-      <div class="download"><i class="fas fa-file-download"></i> Download</div>
-    </div>
-    <div class="right-section">
-      <div class="nav" id="buttons">
-        <button class="btn active" onclick="info()">INFO</button>
-        <button class="btn" onclick="skill()">SKILLS</button>
-        <button class="btn" onclick="languages()">LANGUAGES</button>
-        <button class="btn" onclick="projects()">PROJECTS</button>
-      </div>
-      <div class="info-section" id="info">
-        <h1>OLÁ!</h1>
-        <div class="text">
-          Sou desenvolvedor de front-end, atualmente a estudar na Ensiguarda, no
-          curso de técnico em informática. Também estou a aprender back-end para
-          fazer coisas mais interessantes com meus novos projetos! Podes velos
-          na página PROJECTS ou na minha página do GitHub. 😉
-        </div>
-        <div class="hobbies">
-          <h2>O que faço?</h2>
-          <div class="box">
-            <div class="box-title">
-              <img src="img/web.svg" alt="" />
-              <h3>Web development</h3>
+      <div class="right">
+        <nav>
+          <button class="btn active-btn " onclick="setPage(0, this)">INFO</button>
+          <button class="btn" onclick="setPage(1, this)">SKILLS</button>
+          <button class="btn" onclick="setPage(2, this)">LANGUAGES</button>
+          <button class="btn" onclick="setPage(3, this)">PROJECTS</button>
+        </nav>
+        <div class="info page" id="info">
+          <div class="header">
+            <h1>Olá!</h1>
+            <h2>
+              Sou desenvolvedor de front-end, atualmente a estudar na
+              Ensiguarda, no curso de técnico em informática. Também estou a
+              aprender back-end para fazer coisas mais interessantes com meus
+              novos projetos! Podes velos na página PROJECTS ou na minha página
+              do GitHub. 😉
+            </h2>
+          </div>
+          <div class="body">
+            <h2>O que faço?</h2>
+            <div class="box-container">
+              <div class="box">
+                <div class="box-title">
+                  <i class="fas fa-globe"></i>
+                  <h3>Web development</h3>
+                </div>
+                <div class="description">
+                  Contruo websites responsivos, quer sejam estáticos ou
+                  dinâmicos utilizadndo HTML e CSS.
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-title">
+                  <i class="fab fa-js-square"></i>
+                  <h3>JavaScript</h3>
+                </div>
+                <div class="description">
+                  JavaScript é a minha linguagem de programação preferida e tudo
+                  o que faço atualmente é com ela.
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-title">
+                  <i class="fab fa-js-square"></i>
+                  <h3>React Native</h3>
+                </div>
+                <div class="description">
+                  Ainda estou no inicio de desenvolvimento de aplicações para
+                  telemóvel mas continuo sempre a aprender
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-title">
+                  <i class="fas fa-atom"></i>
+                  <h3>Electron</h3>
+                </div>
+                <div class="description">
+                  Desenvolvo aplicaçoes para desktop.
+                </div>
+              </div>
             </div>
-            <div class="description">
-              Contruo websites responsivos, quer sejam estáticos ou dinâmicos utilizadndo HTML e CSS.
-            </div>
-          </div>
-          <div class="box">
-            <div class="box-title">
-              <img src="img/js-format.svg" alt="" />
-              <h3>JavaScript</h3>
-            </div>
-            <div class="description">
-              JavaScript é a minha linguagem de programação preferida e tudo o
-              que faço atualmente é com ela.
-            </div>
-          </div>
-          <div class="box">
-            <div class="box-title">
-              <img src="img/react-brands.svg" alt="" />
-              <h3>React Native</h3>
-            </div>
-            <div class="description">
-              Ainda estou no inicio de desenvolvimento de aplicações para telemóvel mas continuo sempre a aprender
-            </div>
-          </div>
-          <div class="box">
-            <div class="box-title">
-              <img src="img/web-programming.svg" alt="" />
-              <h3>Electron</h3>
-            </div>
-            <div class="description">
-              Desenvolvo aplicaçoes para desktop.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skills-section" id="skill" style="display: none;">
-        <h1>Habilidades:</h1>
-        <div class="skills">
-          <h2>HTML</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 95%;">95%</div>
-          </div>
-          <h2>CSS</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 90%;">90%</div>
-          </div>
-          <h2>JavaScript</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 80%;">80%</div>
-          </div>
-          <h2>PHP</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 30%;">30%</div>
-          </div>
-          <h2>NODE.js</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 50%;">50%</div>
-          </div>
-          <h2>React Native</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 70%;">70%</div>
-          </div>
-          <h2>Photoshop</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 60%;">60%</div>
-          </div>
-          <h2>Illustrator</h2>
-          <div class="skills-container">
-            <div class="skill-level" style="width: 50%;">50%</div>
           </div>
         </div>
-      </div>
-      <div class="languages-section" id="languages" style="display: none;">
-        <h1>Idiomas</h1>
-        <div class="languages">
-          <h2>Português</h2>
-          <div class="dot-wraper">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div class="skills page" id="skills" style="display: none">
+          <div class="header">
+            <h1>Skills</h1>
           </div>
-          <h2>Inglês</h2>
-          <div class="dot-wraper">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="blank-dot"></div>
-          </div>
-          <h2>Espanhol</h2>
-          <div class="dot-wraper">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-          </div>
-          <h2>Francês</h2>
-          <div class="dot-wraper">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-            <div class="blank-dot"></div>
-            <div class="bslank-dot"></div>
-            <div class="blank-dot"></div>
-          </div>
-        </div>
-      </div>
-      <div class="projects-sections" id="projects" style="display: none;">
-        <h1>Vê os meus projetos</h1>
-        <div class="projects">
-          <div class="project">
-            <a href="projects/Covid19-stats/index.html" target="_blank">
-              <img src="img/projects/covid.png" class="image" alt="" />
-              <div class="description">Covid-19 Stats</div>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://github.com/PedroQuadrado/Primeira-Liga-Stats"
-              target="_blank"
-            >
-              <img src="img/projects/primeiraliga.jpg" class="image" alt="" />
-              <div class="description">Primeira Liga Stats</div>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              href="https://github.com/PedroQuadrado/Weather-app"
-              target="_blank"
-            >
-              <img src="img/projects/weather.png" class="image" alt="" />
-              <div class="description">Tempo - Desktop</div>
-            </a>
-          </div>
-          <div class="project">
-            <a href="projects/TODO-app/index.html" target="_blank">
-              <img src="img/projects/todo.png" class="image" alt="" />
-              <div class="description">lista TODO</div>
-            </a>
-          </div>
-          <div class="project">
-            <a href="projects/rockpaperscissor/index.html" target="_blank">
-              <img src="img/projects/ppt.png" class="image" alt="" />
-              <div class="description">Pedra papel tesoura</div>
-            </a>
-          </div>
-          <div class="project">
-            <a href="projects/HI-LO-game/index.html" target="_blank">
-              <img src="img/projects/hilo.png" class="image" alt="" />
-              <div class="description">Jogo de Cartas</div>
-            </a>
-          </div>
+          <div class="body">
+            <div class="item">
+              <h2>HTML & CSS</h2>
+              <div class="percentage-container">
+                <div class="percentage" style="width: 90%">90%</div>
+              </div>
+            </div>
 
-          <div class="more">
-            <a href="projects.html">ver mais &nbsp;<i class="fas fa-external-link-square-alt"></i></a>
-            
+            <div class="item">
+              <h2>JavaScript</h2>
+              <div class="percentage-container">
+                <div class="percentage" style="width: 85%">85%</div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>NODE</h2>
+              <div class="percentage-container">
+                <div class="percentage" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>Design</h2>
+              <div class="percentage-container">
+                <div class="percentage" style="width: 50%">50%</div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>Photoshop</h2>
+              <div class="percentage-container">
+                <div class="percentage" style="width: 65%">65%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="languages page" id="languages" style="display: none">
+          <div class="header">
+            <h1>Languages</h1>
+          </div>
+          <div class="body">
+            <div class="item">
+              <h2>Português</h2>
+              <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+            <div class="item">
+              <h2>Inglês</h2>
+              <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="item">
+              <h2>Espanhol</h2>
+              <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="item">
+              <h2>Francês</h2>
+              <div class="rating">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects page" id="projects" style="display: none">
+          <div class="header"><h1>Vê os meus projetos</h1></div>
+          <div class="body">
+            <div class="box-container">
+              <div class="box">
+                <img src="assets/projects/covid.png" alt="" />
+                <div class="description">Covid-19 Stats</div>
+              </div>
+              <div class="box">
+                <img src="assets/projects/click.png" alt="" />
+                <div class="description">Click game</div>
+              </div>
+              <div class="box">
+                <img src="assets/projects/hilo.png" alt="" />
+                <div class="description">Card game</div>
+              </div>
+              <div class="box">
+                <img src="assets/projects/ppt.png" alt="" />
+                <div class="description">PPT game</div>
+              </div>
+              <div class="box">
+                <img src="assets/projects/hex.png" alt="" />
+                <div class="description">Random color</div>
+              </div>
+              <div class="box">
+                <img src="assets/projects/weather.png" alt="" />
+                <div class="description">Weather app</div>
+              </div>
+            </div>
+            <div class="link">
+              <a href="projects.html"
+                >ver mais &nbsp;<i class="fas fa-external-link-square-alt"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <script defer src="js/main.js"></script>
+    </main>
+    <script defer src="js/index.js"></script>
   </body>
 </html>
