@@ -69,7 +69,7 @@ main {
 .left li {
     display: flex;
     align-items: center;
-    margin: 25px 0;
+    margin: 15px 10px;
 }
 .left ul img {
     width: 25px;
@@ -77,6 +77,9 @@ main {
    margin-right: 10px;
 }
 .left a {
+    color: inherit;
+}
+.left > a {
     display: flex;
     justify-content: center;
     align-items: center;
