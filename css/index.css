@@ -78,6 +78,7 @@ main {
 }
 .left a {
     color: inherit;
+    display: inherit;
 }
 .left > a {
     display: flex;
