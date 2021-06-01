@@ -13,10 +13,10 @@
       <div class="title"><img src="square.svg" alt=""> QUADRADO</div>
       <nav>
         <ul>
-          <li style="color: #ffc107">HOME</li>
-          <li>SKILLS</li>
-          <li>PROJECTS</li>
-          <li>CONTACTS</li>
+          <li style="color: #ffc107"><a href="#home">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
         </ul>
       </nav>
     </header>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="right">
-          <section>
+          <section id="home">
             <div class="title">OLÁ!</div>
             <div class="description">
               Sou um entusiasta da informática e de todos os seus vastos ramos,
@@ -52,7 +52,7 @@
               TUDO!
             </div>
           </section>
-          <section>
+          <section id="skills">
             <div class="title">SKILLS</div>
             <div class="graph">
               <div class="item">
@@ -111,7 +111,7 @@
               <img src="cordova.png" alt="" />
             </div>
           </section>
-          <section>
+          <section id="projects">
             <div class="title">Projects</div>
             <div class="projects">
               <div class="box">
@@ -139,7 +139,7 @@
               <div class="box"></div>
             </div>
           </section>
-          <section>
+          <section id="contacts">
             
             <div class="title">CONTACTS</div>
             <div class="contacts">
@@ -195,5 +195,26 @@
         </div>
       </div>
     </main>
+    <script>
+      const sections = document.getElementsByTagName("section")
+      const wrapper = document.getElementsByClassName("right")[0]
+      const links = document.getElementsByTagName("ul")[0].children
+      let currentI = 0
+      let sectionsOffset = []
+      window.onscroll = function() {setLinkColor()}
+      wrapper.onscroll = function() {setLinkColor()}
+      function setLinkColor() {
+        for (let i = 0; i < sections.length; i++) {
+          sectionsOffset[i] = sections[i].getBoundingClientRect().top - wrapper.getBoundingClientRect().top -30;
+          if (sectionsOffset[i] <= 0) {
+            currentI = i
+          }
+        }
+        for (let i = 0; i < links.length; i++) {
+          links[i].style.color= "#fff"
+          links[currentI].style.color = "#ffc107"
+        }
+      }
+    </script>
   </body>
 </html>
