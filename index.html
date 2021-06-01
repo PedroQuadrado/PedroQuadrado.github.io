@@ -1,231 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt_PT">
+<html lang="pt-PT">
   <head>
+    <link rel="icon" href="square.svg">
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script
-      src="https://kit.fontawesome.com/eaea929bcf.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Quadrado</title>
   </head>
   <body>
-    <main>
-      <div class="left">
-        <div class="photo-container">
-          <img src="assets/perfil/triangulo.gif" alt="" />
-        </div>
-        <div class="name">Pedro Quadrado</div>
-        <div class="job">Web Developer</div>
+    <header>
+      <div class="title"><img src="square.svg" alt=""> QUADRADO</div>
+      <nav>
         <ul>
-          <li><a target="_blank" href="https://www.google.com/maps/place/Guarda/@40.5392356,-7.2803795,13z/data=!3m1!4b1!4m13!1m7!3m6!1s0xd3cfac48ff6c653:0x400ebbde4903500!2sGuarda!3b1!8m2!3d40.5308408!4d-7.2221421!3m4!1s0xd3cfadb1981953f:0x49d2dc8643620605!8m2!3d40.5383623!4d-7.2661257"><i class="fas fa-map-marker-alt"></i>Guarda, PT</a></li>
-          <li><i class="fab fa-github"></i>Github</li>
-          <li><a target="_blank" href="mailto:quadrado.dev@gmail.com"><i class="fas fa-envelope"></i>quadrado.dev@gmail.com</a></li>
+          <li style="color: #ffc107">HOME</li>
+          <li>SKILLS</li>
+          <li>PROJECTS</li>
+          <li>CONTACTS</li>
         </ul>
-        <a href=""><i class="fas fa-file-download"></i>Download</a>
-      </div>
-      <div class="right">
-        <nav>
-          <button class="btn active-btn " onclick="setPage(0, this)">INFO</button>
-          <button class="btn" onclick="setPage(1, this)">SKILLS</button>
-          <button class="btn" onclick="setPage(2, this)">LANGUAGES</button>
-          <button class="btn" onclick="setPage(3, this)">PROJECTS</button>
-        </nav>
-        <div class="info page" id="info">
-          <div class="header">
-            <h1>Olá!</h1>
-            <h2>
-              Sou um desenvolvedor web, atualmente a estudar na Ensiguarda, no curso Tecnico de informática.
-              Durante o tempo livre gosto de construir sites e aplicações utilizando tecnologias Web, pois acredito no seu potencial e futuro. 😉
-            </h2>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="left">
+          <div class="title"><span>//</span> PEDRO QUADRADO</div>
+          <div class="photo-wrapper">
+            <img src="perfil.jpg" alt="" class="perfil-photo" />
           </div>
-          <div class="body">
-            <h2>O que faço?</h2>
-            <div class="box-container">
-              <div class="box">
-                <div class="box-title">
-                  <i class="fas fa-globe"></i>
-                  <h3>Web development</h3>
-                </div>
-                <div class="description">
-                  Contruo websites responsivos, quer sejam estáticos ou
-                  dinâmicos utilizadndo HTML e CSS.
-                </div>
-              </div>
-              <div class="box">
-                <div class="box-title">
-                  <i class="fab fa-js-square"></i>
-                  <h3>JavaScript</h3>
-                </div>
-                <div class="description">
-                  JavaScript é a minha linguagem de programação de eleição e a maioria dos meus projetos é sao feitos com ela.
-                </div>
-              </div>
-              <div class="box">
-                <div class="box-title">
-                  <i class="fab fa-node-js"></i>
-                  <h3>NODE</h3>
-                </div>
-                <div class="description">
-                  Para trazer o JavaScript fora do browser uso o Node, que me permite criar aplicações, servers e muito mais.
-                </div>
-              </div>
-              <div class="box">
-                <div class="box-title">
-                  <i class="fas fa-atom"></i>
-                  <h3>Electron</h3>
-                </div>
-                <div class="description">
-                  Electron é um framework do NODE, que eu uso para criar aplicações para desktop.
-                </div>
-              </div>
-            </div>
+          <div class="socials">
+            <ul>
+              <li title="github">
+                <a href="https://www.instagram.com/pedro.quadrado_/"><img src="instagram.svg" alt="" /></li></a>
+                
+                
+              <li title="instagram"><a href="https://github.com/PedroQuadrado"></a><img src="github.svg" alt="" /></li>
+              <li title="linkedin"><img src="linkedin.svg" alt="" /></li>
+            </ul>
           </div>
         </div>
-        <div class="skills page" id="skills" style="display: none">
-          <div class="header">
-            <h1>Skills</h1>
-          </div>
-          <div class="body">
-            <div class="item">
-              <h2>HTML & CSS</h2>
-              <div class="percentage-container">
-                <div class="percentage" style="width: 90%">90%</div>
-              </div>
-            </div>
 
-            <div class="item">
-              <h2>JavaScript</h2>
-              <div class="percentage-container">
-                <div class="percentage" style="width: 85%">85%</div>
+        <div class="right">
+          <section>
+            <div class="title">OLÁ!</div>
+            <div class="description">
+              Sou um entusiasta da informática e de todos os seus vastos ramos,
+              do hardware ao software. Contudo sou mais interessado na parte do
+              software, e fasciono-me com possibilidades infinitas que têm para
+              oferecer. O que mais gosto de fazer é desenvolver, é criar, é
+              fazer nascer o que quer que seja, seja conteúdo multimédia, criar
+              automatizações, um website, uma app mobile, uma aplicação desktop,
+              TUDO!
+            </div>
+          </section>
+          <section>
+            <div class="title">SKILLS</div>
+            <div class="graph">
+              <div class="item">
+                <div class="label">HTML/CSS</div>
+                <div class="percentage">95%</div>
+                <div class="bar">
+                  <div class="inner" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">JavaScript</div>
+                <div class="percentage">80%</div>
+                <div class="bar">
+                  <div class="inner" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">NODE</div>
+                <div class="percentage">65%</div>
+                <div class="bar">
+                  <div class="inner" style="width: 65%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">Edição de imagens</div>
+                <div class="percentage">85%</div>
+                <div class="bar">
+                  <div class="inner" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">Adaptação a novas skills</div>
+                <div class="percentage">90%</div>
+                <div class="bar">
+                  <div class="inner" style="width: 90%"></div>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <h2>NODE</h2>
-              <div class="percentage-container">
-                <div class="percentage" style="width: 60%">60%</div>
-              </div>
+            <div class="languages">
+              <div class="box">Português <span>9.5/10</span></div>
+              <div class="box">Inglês <span>8/10</span></div>
+              <div class="box">Espanhol <span>5/10</span></div>
             </div>
-            <div class="item">
-              <h2>Design</h2>
-              <div class="percentage-container">
-                <div class="percentage" style="width: 50%">50%</div>
-              </div>
+            <div class="logos">
+              <img src="ai.png" alt="" />
+              <img src="ps.png" alt="" />
+              <img src="pr.png" alt="" />
+              <img src="react.png" alt="" />
+              <img src="node.png" alt="" />
+              <img src="netlify.png" alt="" />
+              <img src="js.png" alt="" />
+              <img src="html.png" alt="" />
+              <img src="css.png" alt="" />
+              <img src="github.png" alt="" />
+              <img src="electron.png" alt="" />
+              <img src="cordova.png" alt="" />
             </div>
-            <div class="item">
-              <h2>Photoshop</h2>
-              <div class="percentage-container">
-                <div class="percentage" style="width: 65%">65%</div>
+          </section>
+          <section>
+            <div class="title">Projects</div>
+            <div class="projects">
+              <div class="box">
+                <img src="pap-pedroquadrado.netlify.app.png" alt="" />
+                <div class="caption">
+                  Website expositivo de um restaurante, com uma página dedicada a uma galeria e um menu online com dados dinâmicos, que  podem ser geridos através da api Contentful.</div>
+                <div class="label">Restaurant</div>
               </div>
+              <div class="box">
+                <img src="covid-19-quadrado.netlify.app.png" alt="" />
+                <div class="caption">
+                  Website com dados atuais da pandemia covid-19, recolhidos através de uma api e apresentados visualmente, conta também com uma página com vários detalhes sobre o estado da pandemia em Portugal e outra com um “ranking” mundial.
+                </div>
+                <div class="label">Covid-19 Stats</div>
+              </div>
+              <div class="box">
+                <img src="weather.png" alt="" />
+                <div class="caption">
+                  Aplicação desktop com previsões atmosféricas para o local escolhido pelo utilizador
+                </div>
+                <div class="label">Weather app</div>
+              </div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </section>
+          <section>
+            
+            <div class="title">CONTACTS</div>
+            <div class="contacts">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/quadrado.dev@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <label for="name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Pedro Quadrado"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="quadrado.dev@gmail.com"
+                required
+              />
+              <label for="subject">Assunto:</label>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Proposta de trabalho"
+                required
+              />
+              <label for="message">Mensagem:</label>
+              <textarea
+                placeholder="Bom dia Pedro..."
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+
+              <button type="submit"><img src="send.svg" alt=""></button>
+            </form>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d194041.96924279013!2d-7.2573768292311565!3d40.543670948596926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1622562989762!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <div class="local">Guarda, PT <img src="map-pin.svg" alt=""></div>
             </div>
           </div>
-        </div>
-        <div class="languages page" id="languages" style="display: none">
-          <div class="header">
-            <h1>Languages</h1>
-          </div>
-          <div class="body">
-            <div class="item">
-              <h2>Português</h2>
-              <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-              </div>
-            </div>
-            <div class="item">
-              <h2>Inglês</h2>
-              <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-            </div>
-            <div class="item">
-              <h2>Espanhol</h2>
-              <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-            </div>
-            <div class="item">
-              <h2>Francês</h2>
-              <div class="rating">
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects page" id="projects" style="display: none">
-          <div class="header"><h1>Vê os meus projetos</h1></div>
-          <div class="body">
-            <div class="box-container">
-              <div class="box">
-                <img src="assets/projects/covid.png" alt="" />
-                <div class="description">Covid-19 Stats</div>
-              </div>
-              <div class="box">
-                <img src="assets/projects/click.png" alt="" />
-                <div class="description">Click game</div>
-              </div>
-              <div class="box">
-                <img src="assets/projects/hilo.png" alt="" />
-                <div class="description">Card game</div>
-              </div>
-              <div class="box">
-                <img src="assets/projects/ppt.png" alt="" />
-                <div class="description">PPT game</div>
-              </div>
-              <div class="box">
-                <img src="assets/projects/hex.png" alt="" />
-                <div class="description">Random color</div>
-              </div>
-              <div class="box">
-                <img src="assets/projects/weather.png" alt="" />
-                <div class="description">Weather app</div>
-              </div>
-            </div>
-            <div class="link">
-              <a href="projects.html"
-                >ver mais &nbsp;<i class="fas fa-external-link-square-alt"></i
-              ></a>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </main>
-    <script defer src="js/index.js"></script>
   </body>
 </html>
